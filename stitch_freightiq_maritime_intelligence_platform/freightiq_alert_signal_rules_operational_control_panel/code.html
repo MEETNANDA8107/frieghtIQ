@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-surface":"#021c36","surface-container-high":"#dce9ff","surface-dim":"#c5dcfd","on-tertiary":"#ffffff","surface":"#f8f9ff","secondary-fixed":"#aaefee","on-error":"#ffffff","on-primary-fixed-variant":"#37485f","surface-variant":"#d2e4ff","outline-variant":"#c4c6cd","surface-bright":"#f8f9ff","on-tertiary-container":"#b77800","inverse-primary":"#b6c8e4","on-tertiary-fixed-variant":"#633f00","tertiary-fixed":"#ffddb4","surface-container-highest":"#d2e4ff","primary":"#00030b","inverse-on-surface":"#eaf1ff","on-error-container":"#93000a","background":"#f8f9ff","primary-fixed":"#d3e4ff","on-primary-container":"#7586a0","on-surface-variant":"#44474d","surface-container-lowest":"#ffffff","inverse-surface":"#1a324c","tertiary-fixed-dim":"#ffb955","secondary-fixed-dim":"#8fd2d2","error-container":"#ffdad6","on-background":"#021c36","primary-container":"#0b1e33","primary-fixed-dim":"#b6c8e4","secondary-container":"#aaefee","surface-container":"#e5eeff","on-secondary-fixed-variant":"#004f50","surface-tint":"#4e6078","tertiary":"#060200","on-secondary-fixed":"#002020","outline":"#74777d","on-primary":"#ffffff","secondary":"#1f6868","on-primary-fixed":"#091c31","surface-container-low":"#eff4ff","on-secondary":"#ffffff","error":"#ba1a1a","tertiary-container":"#2c1900","on-tertiary-fixed":"#291800","on-secondary-container":"#276e6e"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"space-xl":"2rem","margin-mobile":"1rem","space-2xl":"3rem","space-base":"1rem","space-md":"0.75rem","space-lg":"1.5rem","space-xs":"0.25rem","space-2xs":"0.125rem","gutter-desktop":"1rem","margin-desktop":"1.5rem","gutter-mobile":"0.5rem","space-sm":"0.5rem"},"fontFamily":{"data-metric":["JetBrains Mono"],"body-md":["Inter"],"headline-lg":["Inter"],"label-md":["Inter"],"data-tabular":["JetBrains Mono"],"headline-md":["Inter"],"label-sm":["Inter"],"data-tabular-bold":["JetBrains Mono"],"body-lg":["Inter"],"body-sm":["Inter"],"headline-lg-mobile":["Inter"],"display":["Inter"],"headline-sm":["Inter"]},"fontSize":{"data-metric":["22px",{"lineHeight":"26px","letterSpacing":"-0.03em","fontWeight":"600"}],"body-md":["13px",{"lineHeight":"18px","letterSpacing":"0em","fontWeight":"400"}],"headline-lg":["28px",{"lineHeight":"34px","letterSpacing":"-0.02em","fontWeight":"700"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"600"}],"data-tabular":["12px",{"lineHeight":"16px","letterSpacing":"-0.01em","fontWeight":"500"}],"headline-md":["20px",{"lineHeight":"26px","letterSpacing":"-0.015em","fontWeight":"600"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.03em","fontWeight":"600"}],"data-tabular-bold":["12px",{"lineHeight":"16px","letterSpacing":"-0.01em","fontWeight":"700"}],"body-lg":["15px",{"lineHeight":"22px","letterSpacing":"-0.005em","fontWeight":"400"}],"body-sm":["12px",{"lineHeight":"16px","letterSpacing":"0.005em","fontWeight":"400"}],"headline-lg-mobile":["22px",{"lineHeight":"28px","letterSpacing":"-0.015em","fontWeight":"700"}],"display":["36px",{"lineHeight":"44px","letterSpacing":"-0.025em","fontWeight":"700"}],"headline-sm":["16px",{"lineHeight":"22px","letterSpacing":"-0.01em","fontWeight":"600"}]}}}}</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 h-16 bg-primary-container text-on-primary z-50 flex items-center px-margin-desktop justify-between border-b border-outline/20"><div class="flex items-center gap-space-base min-w-[260px]"><img alt="Brand logo. - Primary color: #0b1e33
+- Font: inter
+- Mode: light
+- Roundness: rounded-sm
+" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UsVHowXyyCiV5p0yVaF0lf614Llv2xW7fWrIyKokC_KYpSf8N8OPpMTzhYLgT86RATxu37Tfwxkb51_Ci9HcqXg6wcpPQKXTCaYYZbGq-VP5-rwu-d2QFTdUWSnujZBeKbZiXU4kW4P42SYyNl5tRmbBzZ-rg8s_TD2cGwWKA89zU42hk1-uvDk-XjvbbxqRRG2va_9mD9FS_e_kmeRZS191X7ymSGEkUtwQISK119BDXa3ZHCVzQ4OQ"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-primary uppercase tracking-tight leading-none">FreightIQ</span><span class="font-label-sm text-label-sm text-on-primary-container tracking-wider uppercase leading-none mt-space-2xs">Maritime Decision Engine</span></div></div><div class="hidden xl:flex items-center flex-1 max-w-4xl mx-space-xl gap-space-lg"><div class="flex items-center gap-space-base py-space-xs px-space-md bg-surface-container-lowest/10 rounded border border-outline/20 font-data-tabular text-data-tabular"><div class="flex items-center gap-space-xs"><span class="text-on-primary-container font-label-sm uppercase">BDI</span><span class="text-on-primary font-bold">1,842</span><span class="text-secondary-fixed flex items-center text-[10px]"><span class="material-symbols-outlined text-[12px]">trending_up</span>+1.4%</span></div><span class="text-outline/40">|</span><div class="flex items-center gap-space-xs"><span class="text-on-primary-container font-label-sm uppercase">VLSFO</span><span class="text-on-primary font-bold">$612/MT</span></div><span class="text-outline/40">|</span><div class="flex items-center gap-space-xs"><span class="text-on-primary-container font-label-sm uppercase">Capesize</span><span class="text-on-primary font-bold">$22,400/d</span><span class="text-secondary-fixed flex items-center text-[10px]"><span class="material-symbols-outlined text-[12px]">trending_up</span>+2.1%</span></div></div><div class="relative flex-1"><span class="material-symbols-outlined absolute left-space-md top-1/2 -translate-y-1/2 text-on-primary-container text-[18px]">search</span><input class="w-full h-8 pl-9 pr-space-md bg-surface-container-lowest/10 text-on-primary placeholder:text-on-primary-container font-body-sm text-body-sm rounded border border-outline/20 focus:outline-none focus:border-secondary-fixed transition-colors" placeholder="Search commodity, port (e.g., C3, Qingdao, Paradip)..." type="text"/></div></div><div class="flex items-center gap-space-base"><div class="relative cursor-pointer p-space-xs rounded hover:bg-surface-container-lowest/10 transition-colors"><span class="material-symbols-outlined text-on-primary text-[22px]">notifications</span><span class="absolute top-1 right-1 w-4 h-4 bg-error text-on-error rounded-full flex items-center justify-center font-label-sm text-[9px] font-bold">3</span></div><div class="h-6 w-px bg-outline/20 mx-space-xs"></div><div class="flex items-center gap-space-md"><div class="text-right hidden sm:flex flex-col"><span class="font-label-sm text-label-sm text-on-primary-container leading-none uppercase">Procurement Desk</span><span class="font-label-md text-label-md text-on-primary font-bold leading-none mt-space-2xs">COMMODITY LEAD</span></div><img alt="Profile" class="w-8 h-8 rounded-full object-cover border border-outline/30" src="https://lh3.googleusercontent.com/aida/AEtjO1U3oIlU7I-tstuRGWz6Di6BrOKcF-uMeZZUpzuu6m_E_T8_wHYJ7EOxNuTVPY4m2EqqV0621e80pAOXH3JC1KcW2eNTQqTn9mJlfpGYsl3mfOGPq9T847dV9TKFnsrPiI5AbEBTpBmq0v0bfLp5UfPbqmxUs8oQqM99DsFuzZrKKk7AvQG965vuS09i7U7ORWG9PII-r7ux4k3fd9xyVQbj5q6VLAbS0RvMDZ6tlStF9X7J72tzLoAi"/></div></div></header><aside class="fixed left-0 top-16 bottom-0 w-64 bg-surface-container-lowest border-r border-outline-variant/40 z-40 flex flex-col justify-between pt-space-base pb-space-md"><div class="flex flex-col"><div class="px-space-base mb-space-base flex items-center justify-between"><span class="font-label-sm text-label-sm font-bold uppercase tracking-wider text-on-surface-variant">Commercial Terminal</span><span class="material-symbols-outlined text-on-surface-variant text-[16px]">dock_to_right</span></div><nav class="flex flex-col gap-space-2xs px-space-xs" data-active-classes="bg-secondary-container text-on-secondary-fixed-variant font-bold border-l-4 border-secondary"><a class="flex items-center justify-between px-space-md py-space-sm rounded text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all border-l-4 border-transparent" data-path="overview" href="#"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-[18px]">grid_view</span><span class="font-body-md text-body-md">Overview</span></div></a><a class="flex items-center justify-between px-space-md py-space-sm rounded text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all border-l-4 border-transparent" data-path="new-forecast" href="#"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-[18px]">edit_road</span><span class="font-body-md text-body-md">New Forecast</span></div></a><a class="flex items-center justify-between px-space-md py-space-sm rounded text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all border-l-4 border-transparent" data-path="forecast-results" href="#"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-[18px]">trending_up</span><span class="font-body-md text-body-md">Forecast Results</span></div><span class="px-space-xs py-space-2xs bg-secondary/10 text-secondary border border-secondary/30 rounded font-data-tabular text-[10px] font-bold">AI</span></a><a class="flex items-center justify-between px-space-md py-space-sm rounded text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all border-l-4 border-transparent" data-path="reports-history" href="#"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-[18px]">description</span><span class="font-body-md text-body-md">Reports &amp; History</span></div></a><a class="flex items-center justify-between px-space-md py-space-sm rounded text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all border-l-4 border-transparent" data-path="alerts-rules" href="#"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-[18px]">notifications_active</span><span class="font-body-md text-body-md">Alerts &amp; Rules</span></div><span class="px-space-xs py-space-2xs bg-surface-container-highest text-on-surface-variant rounded font-data-tabular text-[10px] font-bold">3</span></a><a class="flex items-center justify-between px-space-md py-space-sm rounded text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all border-l-4 border-transparent" data-path="settings" href="#"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-[18px]">settings</span><span class="font-body-md text-body-md">Settings</span></div></a></nav></div><div class="px-space-base pt-space-base border-t border-outline-variant/30 flex flex-col gap-space-xs"><div class="flex items-center justify-between"><span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Engine Mode</span><span class="font-data-tabular text-[10px] text-on-surface font-bold px-space-xs py-space-2xs bg-surface-container-high rounded">PROD-LIVE</span></div><div class="flex items-center gap-space-xs mt-space-2xs"><span class="relative flex h-2 w-2"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary-fixed opacity-75"></span><span class="relative inline-flex rounded-full h-2 w-2 bg-secondary"></span></span><span class="font-body-sm text-body-sm text-on-surface-variant">Baltic Exchange Active</span></div></div></aside><div class="pl-64"><main class="relative pt-16 bg-surface min-h-screen w-full px-margin-desktop"><div class="flex flex-col w-full pb-space-2xl">
+<!-- Top Meta Ribbon & Surveillance Status -->
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-sm mb-space-base pb-space-xs">
+<div class="flex items-center gap-space-sm flex-wrap">
+<div class="flex items-center gap-space-xs font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">
+<span>Rules &amp; Automated Watchdogs</span>
+<span class="text-outline-variant">/</span>
+<span class="text-on-surface font-semibold">Operational Alert Engine</span>
+</div>
+<div class="flex items-center gap-space-xs px-space-sm py-space-2xs bg-secondary-container/40 rounded-full">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-secondary"></span>
+</span>
+<span class="font-data-tabular-bold text-[10px] text-on-secondary-fixed-variant tracking-wider uppercase">Live Surveillance</span>
+</div>
+</div>
+<div class="flex items-center gap-space-md text-on-surface-variant font-data-tabular text-[11px]">
+<span class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[14px] text-secondary">sync</span>
+<span>Polling rate: 45s</span>
+</span>
+<span class="text-outline-variant">|</span>
+<span>Cluster: AP-SOUTH-MUMBAI-1</span>
+</div>
+</div>
+<!-- Page Header & Action Controls Bar -->
+<div class="flex flex-col xl:flex-row xl:items-end justify-between gap-space-lg mb-space-xl">
+<div class="flex flex-col max-w-2xl">
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Alert &amp; Signal Rules</h1>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-2xs">
+        Manage automated triggers across freight rates, bunker fuel, vessel congestion, and route risk with instant commercial dispatch.
+      </p>
+</div>
+<!-- Segment Controls & Action Buttons -->
+<div class="flex flex-wrap items-center gap-space-sm">
+<!-- Filter Segment Control -->
+<div class="flex items-center p-space-2xs bg-surface-container rounded font-label-sm text-label-sm shadow-sm">
+<button class="px-space-md py-space-xs rounded bg-surface-container-lowest text-on-surface font-semibold shadow-sm transition-colors">
+          All <span class="ml-space-2xs font-data-tabular text-on-surface-variant text-[11px]">(12)</span>
+</button>
+<button class="px-space-md py-space-xs rounded text-error hover:text-on-surface transition-colors flex items-center gap-space-2xs">
+<span>Triggered</span>
+<span class="px-space-xs py-space-2xs bg-error-container text-on-error-container font-data-tabular-bold text-[10px] rounded-full">3</span>
+</button>
+<button class="px-space-md py-space-xs rounded text-on-surface-variant hover:text-on-surface transition-colors">
+          Active <span class="ml-space-2xs font-data-tabular text-[11px] text-on-surface-variant">(8)</span>
+</button>
+<button class="px-space-md py-space-xs rounded text-on-surface-variant hover:text-on-surface transition-colors">
+          Paused <span class="ml-space-2xs font-data-tabular text-[11px] text-on-surface-variant">(1)</span>
+</button>
+</div>
+<!-- Secondary Setup Action -->
+<button class="h-9 px-space-md bg-surface-container-low hover:bg-surface-container text-on-surface font-label-md text-label-md rounded shadow-sm flex items-center gap-space-xs transition-all">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">cable</span>
+<span>Global Webhooks</span>
+</button>
+<!-- Primary Action: Warm Amber CTA -->
+<button class="h-9 px-space-lg bg-tertiary-fixed-dim hover:bg-on-tertiary-container text-tertiary-container hover:text-on-tertiary font-headline-sm text-headline-sm rounded shadow-sm flex items-center gap-space-xs transition-all">
+<span class="material-symbols-outlined text-[18px]">add_alert</span>
+<span>+ New Alert Rule</span>
+</button>
+</div>
+</div>
+<!-- Summary KPI Cards Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-base mb-space-xl">
+<!-- KPI 1: Active Rules -->
+<div class="bg-surface-container-lowest p-space-base rounded-xl shadow-sm hover:shadow-md transition-shadow relative overflow-hidden">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Active Watchdogs</span>
+<span class="p-space-xs bg-surface-container-low text-secondary rounded">
+<span class="material-symbols-outlined text-[18px]">shield</span>
+</span>
+</div>
+<div class="mt-space-sm flex items-baseline gap-space-xs">
+<span class="font-data-metric text-data-metric text-on-surface">8</span>
+<span class="font-data-tabular text-[13px] text-on-surface-variant">/ 12 total</span>
+</div>
+<div class="mt-space-xs flex items-center gap-space-xs font-body-sm text-body-sm text-secondary">
+<span class="material-symbols-outlined text-[14px]">trending_up</span>
+<span>+2 configured this month</span>
+</div>
+<div class="absolute -right-6 -bottom-6 w-20 h-20 bg-secondary/5 rounded-full blur-xl pointer-events-none"></div>
+</div>
+<!-- KPI 2: Triggered Active -->
+<div class="bg-surface-container-lowest p-space-base rounded-xl shadow-sm hover:shadow-md transition-shadow relative overflow-hidden">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Triggered Alerts (7D)</span>
+<span class="p-space-xs bg-error-container text-error rounded">
+<span class="material-symbols-outlined text-[18px]">warning</span>
+</span>
+</div>
+<div class="mt-space-sm flex items-baseline gap-space-xs">
+<span class="font-data-metric text-data-metric text-error">3</span>
+<span class="font-data-tabular-bold text-[11px] text-error uppercase tracking-wider">Breach Active</span>
+</div>
+<p class="mt-space-xs font-body-sm text-body-sm text-on-surface-variant truncate">
+        Sunda Strait, Paradip Berth, Fuel Dip
+      </p>
+<div class="absolute -right-6 -bottom-6 w-20 h-20 bg-error/10 rounded-full blur-xl pointer-events-none"></div>
+</div>
+<!-- KPI 3: Paused / Muted Rules -->
+<div class="bg-surface-container-lowest p-space-base rounded-xl shadow-sm hover:shadow-md transition-shadow relative overflow-hidden">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Rules Paused / Muted</span>
+<span class="p-space-xs bg-surface-container-high text-on-surface-variant rounded">
+<span class="material-symbols-outlined text-[18px]">pause_circle</span>
+</span>
+</div>
+<div class="mt-space-sm flex items-baseline gap-space-xs">
+<span class="font-data-metric text-data-metric text-on-surface">1</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">rule muted</span>
+</div>
+<p class="mt-space-xs font-body-sm text-body-sm text-on-surface-variant truncate">
+        Krishnapatnam queue threshold · Resumes in 48h
+      </p>
+</div>
+<!-- KPI 4: Mean Dispatch Time -->
+<div class="bg-surface-container-lowest p-space-base rounded-xl shadow-sm hover:shadow-md transition-shadow relative overflow-hidden">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Dispatch Velocity</span>
+<span class="p-space-xs bg-secondary-container/50 text-secondary rounded">
+<span class="material-symbols-outlined text-[18px]">bolt</span>
+</span>
+</div>
+<div class="mt-space-sm flex items-baseline gap-space-xs">
+<span class="font-data-metric text-data-metric text-on-surface">4.2m</span>
+<span class="font-data-tabular text-[11px] text-secondary font-bold">-1.8m SLA</span>
+</div>
+<div class="mt-space-xs flex items-center gap-space-xs font-body-sm text-body-sm text-on-surface-variant">
+<span>Target &lt;10m</span>
+<span class="text-outline-variant">·</span>
+<span class="text-secondary font-medium">99.4% delivery</span>
+</div>
+<div class="absolute -right-6 -bottom-6 w-20 h-20 bg-secondary-fixed/30 rounded-full blur-xl pointer-events-none"></div>
+</div>
+</div>
+<!-- Main Operational Cockpit: 2-Column Split -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg mb-space-xl">
+<!-- LEFT/CENTER COLUMN: Comprehensive Rule List (8 of 12 cols, ~67%) -->
+<div class="lg:col-span-8 flex flex-col gap-space-base">
+<!-- Filter & Search Toolbar Bar -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col sm:flex-row items-center justify-between gap-space-md">
+<div class="relative w-full sm:w-80">
+<span class="material-symbols-outlined absolute left-space-sm top-1/2 -translate-y-1/2 text-on-surface-variant text-[18px]">search</span>
+<input class="w-full h-8 pl-8 pr-space-md bg-surface text-on-surface placeholder:text-on-surface-variant font-body-sm text-body-sm rounded shadow-inner focus:outline-none focus:bg-surface-container-lowest transition-colors" placeholder="Search rule name, commodity, corridor..." type="text"/>
+</div>
+<div class="flex items-center gap-space-sm w-full sm:w-auto justify-end">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Filter:</span>
+<select class="h-8 px-space-sm bg-surface text-on-surface font-body-sm text-body-sm rounded focus:outline-none cursor-pointer">
+<option>All Trigger Types (12)</option>
+<option>Freight Rate (5)</option>
+<option>Bunker Fuel (3)</option>
+<option>Port Congestion (2)</option>
+<option>Weather &amp; Swell (2)</option>
+</select>
+</div>
+<button class="h-8 px-space-sm bg-surface hover:bg-surface-container-low text-on-surface-variant hover:text-on-surface rounded flex items-center gap-space-xs font-label-sm text-label-sm transition-colors">
+<span class="material-symbols-outlined text-[16px]">tune</span>
+<span>More</span>
+</button>
+</div>
+</div>
+<!-- Rule 1: Baltic C5 Rate Limit -->
+<div class="bg-surface-container-lowest p-space-base rounded-xl shadow-sm hover:shadow-md transition-all flex flex-col gap-space-md">
+<div class="flex flex-col sm:flex-row sm:items-start justify-between gap-space-sm">
+<div class="flex items-start gap-space-md">
+<div class="p-space-xs bg-surface-container-high text-primary-container rounded mt-0.5">
+<span class="material-symbols-outlined text-[20px]">show_chart</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs flex-wrap">
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Baltic C5 W. Australia → China Proxy Rate Limit</h2>
+<span class="px-space-xs py-space-2xs bg-surface-container-high text-on-surface-variant rounded font-data-tabular text-[10px] font-bold uppercase">Freight Rate</span>
+</div>
+<span class="font-data-tabular text-data-tabular text-secondary mt-space-2xs">SCOPE: C5 Capesize (Port Hedland → Paradip / Qingdao Corridor)</span>
+</div>
+</div>
+<!-- Status Toggle Switch -->
+<div class="flex items-center gap-space-sm self-end sm:self-auto">
+<span class="px-space-sm py-space-2xs bg-secondary-container/50 text-on-secondary-fixed-variant rounded-full font-data-tabular-bold text-[10px] uppercase tracking-wider flex items-center gap-space-xs">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+              Active
+            </span>
+<!-- Custom Toggle -->
+<button class="w-9 h-5 bg-secondary rounded-full relative p-0.5 transition-colors focus:outline-none">
+<span class="block w-4 h-4 bg-surface-container-lowest rounded-full shadow transform translate-x-4 transition-transform"></span>
+</button>
+</div>
+</div>
+<!-- Metric & Condition Comparison Strip -->
+<div class="p-space-sm bg-surface-container-low rounded-lg grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Configured Logic</span>
+<span class="font-body-md text-body-md text-on-surface font-medium mt-space-2xs">Exceeds threshold rate &gt; $12.50/MT</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Current Market Value</span>
+<div class="flex items-baseline gap-space-xs mt-space-2xs">
+<span class="font-data-tabular-bold text-[14px] text-on-surface">$12.10/MT</span>
+<span class="font-data-tabular text-[11px] text-secondary font-semibold">(Spread -$0.40/MT safe)</span>
+</div>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Live Stream Feed</span>
+<div class="flex items-center gap-space-xs mt-space-2xs">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-data-tabular text-data-tabular text-on-surface">Baltic Spot Daily · Checked 3m ago</span>
+</div>
+</div>
+</div>
+<!-- Footer Strip: Routing & Actions -->
+<div class="flex flex-col sm:flex-row items-center justify-between gap-space-sm pt-space-xs text-on-surface-variant font-body-sm text-body-sm">
+<div class="flex items-center gap-space-sm flex-wrap">
+<span class="font-label-sm text-label-sm uppercase">Channels:</span>
+<span class="px-space-xs py-space-2xs bg-surface-container rounded text-[11px] font-data-tabular text-on-surface">Slack #chartering-desk</span>
+<span class="px-space-xs py-space-2xs bg-surface-container rounded text-[11px] font-data-tabular text-on-surface">Desk Email</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="px-space-sm py-space-xs bg-surface hover:bg-surface-container text-on-surface rounded font-label-sm text-label-sm transition-colors">Test Trigger</button>
+<button class="px-space-sm py-space-xs bg-surface hover:bg-surface-container text-on-surface rounded font-label-sm text-label-sm transition-colors">Pause</button>
+<button class="px-space-sm py-space-xs bg-surface hover:bg-surface-container text-on-surface rounded font-label-sm text-label-sm transition-colors">Edit</button>
+</div>
+</div>
+</div>
+<!-- Rule 2: Sunda Strait & Paradip Congestion (TRIGGERED STATE) -->
+<div class="bg-surface-container-lowest p-space-base rounded-xl shadow-md hover:shadow-lg transition-all flex flex-col gap-space-md relative overflow-hidden">
+<!-- High visual priority accent strip on left -->
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-error"></div>
+<div class="flex flex-col sm:flex-row sm:items-start justify-between gap-space-sm">
+<div class="flex items-start gap-space-md">
+<div class="p-space-xs bg-error-container text-error rounded mt-0.5 animate-pulse">
+<span class="material-symbols-outlined text-[20px]">anchor</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs flex-wrap">
+<h2 class="font-headline-sm text-headline-sm text-error">Sunda &amp; Malacca Chokepoint &amp; Paradip Congestion Surge</h2>
+<span class="px-space-xs py-space-2xs bg-error-container text-on-error-container rounded font-data-tabular text-[10px] font-bold uppercase">Port &amp; Chokepoint</span>
+</div>
+<span class="font-data-tabular text-data-tabular text-on-surface-variant mt-space-2xs">SCOPE: Sunda Strait Transit → Paradip Iron/Coal Berth 2 Lineup</span>
+</div>
+</div>
+<!-- Status Toggle Switch: Triggered Alarm Badge -->
+<div class="flex items-center gap-space-sm self-end sm:self-auto">
+<span class="px-space-sm py-space-2xs bg-error text-on-error rounded-full font-data-tabular-bold text-[10px] uppercase tracking-wider flex items-center gap-space-xs shadow-sm animate-pulse">
+<span class="material-symbols-outlined text-[12px]">alarm</span>
+              Triggered (3h 12m)
+            </span>
+<button class="w-9 h-5 bg-error rounded-full relative p-0.5 transition-colors focus:outline-none">
+<span class="block w-4 h-4 bg-surface-container-lowest rounded-full shadow transform translate-x-4 transition-transform"></span>
+</button>
+</div>
+</div>
+<!-- Metric & Condition Comparison Strip -->
+<div class="p-space-sm bg-error-container/20 rounded-lg grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-error uppercase font-bold">Trigger Rule Threshold</span>
+<span class="font-body-md text-body-md text-on-surface font-medium mt-space-2xs">Queue duration &gt; 3.5 Days</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-error uppercase font-bold">Fired Metric Value</span>
+<div class="flex items-baseline gap-space-xs mt-space-2xs">
+<span class="font-data-tabular-bold text-[15px] text-error">4.2 Days</span>
+<span class="font-data-tabular text-[11px] text-error font-bold">(+0.7d spike, CRITICAL)</span>
+</div>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-error uppercase font-bold">Satellite Telemetry</span>
+<div class="flex items-center gap-space-xs mt-space-2xs">
+<span class="w-2 h-2 rounded-full bg-error animate-ping"></span>
+<span class="font-data-tabular text-data-tabular text-on-surface">AIS Vessel Clustered · 1m ago</span>
+</div>
+</div>
+</div>
+<!-- Footer Strip: Routing & Actions -->
+<div class="flex flex-col sm:flex-row items-center justify-between gap-space-sm pt-space-xs text-on-surface-variant font-body-sm text-body-sm">
+<div class="flex items-center gap-space-sm flex-wrap">
+<span class="font-label-sm text-label-sm uppercase text-error font-semibold">Priority Routing:</span>
+<span class="px-space-xs py-space-2xs bg-error/10 text-error rounded text-[11px] font-data-tabular font-bold">PagerDuty Commercial Escalation</span>
+<span class="px-space-xs py-space-2xs bg-surface-container rounded text-[11px] font-data-tabular text-on-surface">SMS Lead</span>
+<span class="px-space-xs py-space-2xs bg-surface-container rounded text-[11px] font-data-tabular text-on-surface">Chartering Webhook</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="px-space-md py-space-xs bg-error text-on-error rounded font-label-md text-label-md shadow hover:bg-on-error-container transition-colors flex items-center gap-space-2xs">
+<span class="material-symbols-outlined text-[14px]">send</span>
+<span>Dispatch Alert</span>
+</button>
+<button class="px-space-sm py-space-xs bg-surface hover:bg-surface-container text-on-surface rounded font-label-sm text-label-sm transition-colors">Acknowledge</button>
+<button class="px-space-sm py-space-xs bg-surface hover:bg-surface-container text-on-surface rounded font-label-sm text-label-sm transition-colors">Edit</button>
+</div>
+</div>
+</div>
+<!-- Rule 3: Singapore VLSFO Bunker Fuel Dip -->
+<div class="bg-surface-container-lowest p-space-base rounded-xl shadow-sm hover:shadow-md transition-all flex flex-col gap-space-md">
+<div class="flex flex-col sm:flex-row sm:items-start justify-between gap-space-sm">
+<div class="flex items-start gap-space-md">
+<div class="p-space-xs bg-secondary-fixed/50 text-secondary rounded mt-0.5">
+<span class="material-symbols-outlined text-[20px]">local_gas_station</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs flex-wrap">
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Singapore VLSFO Bunker Buy Dip Watchdog</h2>
+<span class="px-space-xs py-space-2xs bg-secondary-container/40 text-secondary rounded font-data-tabular text-[10px] font-bold uppercase">Bunker Fuel</span>
+</div>
+<span class="font-data-tabular text-data-tabular text-secondary mt-space-2xs">SCOPE: Singapore Bunkering Hub (0.5% S MGO/VLSFO Index)</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm self-end sm:self-auto">
+<span class="px-space-sm py-space-2xs bg-secondary-container/50 text-on-secondary-fixed-variant rounded-full font-data-tabular-bold text-[10px] uppercase tracking-wider flex items-center gap-space-xs">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+              Active
+            </span>
+<button class="w-9 h-5 bg-secondary rounded-full relative p-0.5 transition-colors focus:outline-none">
+<span class="block w-4 h-4 bg-surface-container-lowest rounded-full shadow transform translate-x-4 transition-transform"></span>
+</button>
+</div>
+</div>
+<div class="p-space-sm bg-surface-container-low rounded-lg grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Target Dip Condition</span>
+<span class="font-body-md text-body-md text-on-surface font-medium mt-space-2xs">Rate drops below &lt; $595.00/MT</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Current Hub Price</span>
+<div class="flex items-baseline gap-space-xs mt-space-2xs">
+<span class="font-data-tabular-bold text-[14px] text-on-surface">$612.00/MT</span>
+<span class="font-data-tabular text-[11px] text-on-surface-variant font-medium">(+$17.00/MT to dip target)</span>
+</div>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Pricing Benchmark</span>
+<div class="flex items-center gap-space-xs mt-space-2xs">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-data-tabular text-data-tabular text-on-surface">Platts Bunkerwire · 12m ago</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col sm:flex-row items-center justify-between gap-space-sm pt-space-xs text-on-surface-variant font-body-sm text-body-sm">
+<div class="flex items-center gap-space-sm flex-wrap">
+<span class="font-label-sm text-label-sm uppercase">Channels:</span>
+<span class="px-space-xs py-space-2xs bg-surface-container rounded text-[11px] font-data-tabular text-on-surface">In-App Banner</span>
+<span class="px-space-xs py-space-2xs bg-surface-container rounded text-[11px] font-data-tabular text-on-surface">Procurement Email</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="px-space-sm py-space-xs bg-surface hover:bg-surface-container text-on-surface rounded font-label-sm text-label-sm transition-colors">Model What-If</button>
+<button class="px-space-sm py-space-xs bg-surface hover:bg-surface-container text-on-surface rounded font-label-sm text-label-sm transition-colors">Pause</button>
+<button class="px-space-sm py-space-xs bg-surface hover:bg-surface-container text-on-surface rounded font-label-sm text-label-sm transition-colors">Edit</button>
+</div>
+</div>
+</div>
+<!-- Rule 4: Krishnapatnam Anchorage Queue -->
+<div class="bg-surface-container-lowest p-space-base rounded-xl shadow-sm hover:shadow-md transition-all flex flex-col gap-space-md">
+<div class="flex flex-col sm:flex-row sm:items-start justify-between gap-space-sm">
+<div class="flex items-start gap-space-md">
+<div class="p-space-xs bg-surface-container-high text-on-surface-variant rounded mt-0.5">
+<span class="material-symbols-outlined text-[20px]">directions_boat</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs flex-wrap">
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Krishnapatnam Anchorage Queue Threshold</h2>
+<span class="px-space-xs py-space-2xs bg-surface-container text-on-surface-variant rounded font-data-tabular text-[10px] font-bold uppercase">Port Congestion</span>
+</div>
+<span class="font-data-tabular text-data-tabular text-on-surface-variant mt-space-2xs">SCOPE: Krishnapatnam Deepwater Berth (Coal Stems Lineup)</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm self-end sm:self-auto">
+<span class="px-space-sm py-space-2xs bg-surface-container-high text-on-surface-variant rounded-full font-data-tabular-bold text-[10px] uppercase tracking-wider flex items-center gap-space-xs">
+<span class="w-1.5 h-1.5 rounded-full bg-outline"></span>
+              Paused
+            </span>
+<!-- Toggle Off -->
+<button class="w-9 h-5 bg-surface-container-high rounded-full relative p-0.5 transition-colors focus:outline-none">
+<span class="block w-4 h-4 bg-surface-container-lowest rounded-full shadow transform translate-x-0 transition-transform"></span>
+</button>
+</div>
+</div>
+<div class="p-space-sm bg-surface-container-low rounded-lg grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Logic Target</span>
+<span class="font-body-md text-body-md text-on-surface font-medium mt-space-2xs">Lineup &gt; 8 Capesize/Panamax stems</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Current Anchorage Load</span>
+<div class="flex items-baseline gap-space-xs mt-space-2xs">
+<span class="font-data-tabular-bold text-[14px] text-on-surface">6 Vessels</span>
+<span class="font-data-tabular text-[11px] text-secondary font-semibold">(Safe buffer: 2 stems)</span>
+</div>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Port Agent Sync</span>
+<div class="flex items-center gap-space-xs mt-space-2xs">
+<span class="w-2 h-2 rounded-full bg-outline"></span>
+<span class="font-data-tabular text-data-tabular text-on-surface-variant">Queue feed muted · 18m ago</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col sm:flex-row items-center justify-between gap-space-sm pt-space-xs text-on-surface-variant font-body-sm text-body-sm">
+<div class="flex items-center gap-space-sm flex-wrap">
+<span class="font-label-sm text-label-sm uppercase">Channels:</span>
+<span class="px-space-xs py-space-2xs bg-surface-container rounded text-[11px] font-data-tabular text-on-surface">Daily Email</span>
+<span class="px-space-xs py-space-2xs bg-surface-container rounded text-[11px] font-data-tabular text-on-surface">Weekly Summary</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="px-space-sm py-space-xs bg-surface hover:bg-surface-container text-on-surface rounded font-label-sm text-label-sm transition-colors">Resume Watchdog</button>
+<button class="px-space-sm py-space-xs bg-surface hover:bg-surface-container text-on-surface rounded font-label-sm text-label-sm transition-colors">Edit</button>
+</div>
+</div>
+</div>
+<!-- Rule 5: Cyclone Season Bay of Bengal Weather Risk -->
+<div class="bg-surface-container-lowest p-space-base rounded-xl shadow-sm hover:shadow-md transition-all flex flex-col gap-space-md">
+<div class="flex flex-col sm:flex-row sm:items-start justify-between gap-space-sm">
+<div class="flex items-start gap-space-md">
+<div class="p-space-xs bg-secondary-container/50 text-secondary rounded mt-0.5">
+<span class="material-symbols-outlined text-[20px]">cyclone</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs flex-wrap">
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Cyclone Season Bay of Bengal Weather &amp; Swell Risk</h2>
+<span class="px-space-xs py-space-2xs bg-secondary-container/40 text-on-secondary-fixed-variant rounded font-data-tabular text-[10px] font-bold uppercase">Weather &amp; Routing</span>
+</div>
+<span class="font-data-tabular text-data-tabular text-secondary mt-space-2xs">SCOPE: Bay of Bengal (Approaches to Paradip, Vizag, and Dhamra Ports)</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm self-end sm:self-auto">
+<span class="px-space-sm py-space-2xs bg-secondary-container/50 text-on-secondary-fixed-variant rounded-full font-data-tabular-bold text-[10px] uppercase tracking-wider flex items-center gap-space-xs">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+              Active
+            </span>
+<button class="w-9 h-5 bg-secondary rounded-full relative p-0.5 transition-colors focus:outline-none">
+<span class="block w-4 h-4 bg-surface-container-lowest rounded-full shadow transform translate-x-4 transition-transform"></span>
+</button>
+</div>
+</div>
+<div class="p-space-sm bg-surface-container-low rounded-lg grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Swell / Wind Condition</span>
+<span class="font-body-md text-body-md text-on-surface font-medium mt-space-2xs">Significant wave height &gt; 4.0m or depression</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Telemetry Height</span>
+<div class="flex items-baseline gap-space-xs mt-space-2xs">
+<span class="font-data-tabular-bold text-[14px] text-on-surface">2.8m Wave</span>
+<span class="font-data-tabular text-[11px] text-on-surface-variant font-medium">(Pre-monsoon swell watch active)</span>
+</div>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Meteorological Telemetry</span>
+<div class="flex items-center gap-space-xs mt-space-2xs">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-data-tabular text-data-tabular text-on-surface">ECMWF Marine Radar · 5m ago</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col sm:flex-row items-center justify-between gap-space-sm pt-space-xs text-on-surface-variant font-body-sm text-body-sm">
+<div class="flex items-center gap-space-sm flex-wrap">
+<span class="font-label-sm text-label-sm uppercase">Channels:</span>
+<span class="px-space-xs py-space-2xs bg-surface-container rounded text-[11px] font-data-tabular text-on-surface">SMS Chartering Desk</span>
+<span class="px-space-xs py-space-2xs bg-surface-container rounded text-[11px] font-data-tabular text-on-surface">Slack #voyage-ops</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="px-space-sm py-space-xs bg-surface hover:bg-surface-container text-on-surface rounded font-label-sm text-label-sm transition-colors">View Satellite Radar</button>
+<button class="px-space-sm py-space-xs bg-surface hover:bg-surface-container text-on-surface rounded font-label-sm text-label-sm transition-colors">Pause</button>
+<button class="px-space-sm py-space-xs bg-surface hover:bg-surface-container text-on-surface rounded font-label-sm text-label-sm transition-colors">Edit</button>
+</div>
+</div>
+</div>
+<!-- Rule 6: Iron Ore CFR Paradip (62% Fe) - Price Threshold (TRIGGERED / WARNING) -->
+<div class="bg-surface-container-lowest p-space-base rounded-xl shadow-md hover:shadow-lg transition-all flex flex-col gap-space-md relative overflow-hidden">
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-tertiary-fixed-dim"></div>
+<div class="flex flex-col sm:flex-row sm:items-start justify-between gap-space-sm">
+<div class="flex items-start gap-space-md">
+<div class="p-space-xs bg-tertiary-fixed text-on-tertiary-container rounded mt-0.5">
+<span class="material-symbols-outlined text-[20px]">monetization_on</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs flex-wrap">
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Iron Ore CFR Paradip (62% Fe) Price Threshold Spike</h2>
+<span class="px-space-xs py-space-2xs bg-tertiary-fixed text-on-tertiary-container rounded font-data-tabular text-[10px] font-bold uppercase">Commodity Price</span>
+</div>
+<span class="font-data-tabular text-data-tabular text-secondary mt-space-2xs">SCOPE: CFR Paradip (Mechanized Berth Direct Feed Discharge)</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm self-end sm:self-auto">
+<span class="px-space-sm py-space-2xs bg-tertiary-fixed text-on-tertiary-container rounded-full font-data-tabular-bold text-[10px] uppercase tracking-wider flex items-center gap-space-xs shadow-sm">
+<span class="material-symbols-outlined text-[12px]">notifications_active</span>
+              Triggered Warning
+            </span>
+<button class="w-9 h-5 bg-on-tertiary-container rounded-full relative p-0.5 transition-colors focus:outline-none">
+<span class="block w-4 h-4 bg-surface-container-lowest rounded-full shadow transform translate-x-4 transition-transform"></span>
+</button>
+</div>
+</div>
+<div class="p-space-sm bg-surface-container-low rounded-lg grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Volatility Rule</span>
+<span class="font-body-md text-body-md text-on-surface font-medium mt-space-2xs">IODEX index rises &gt; 3.0% in single trading session</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Current Index Spot</span>
+<div class="flex items-baseline gap-space-xs mt-space-2xs">
+<span class="font-data-tabular-bold text-[14px] text-on-surface">$107.50/MT</span>
+<span class="font-data-tabular text-[11px] text-on-tertiary-container font-bold">(+2.8% cycle surge)</span>
+</div>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Pricing Feed</span>
+<div class="flex items-center gap-space-xs mt-space-2xs">
+<span class="w-2 h-2 rounded-full bg-on-tertiary-container"></span>
+<span class="font-data-tabular text-data-tabular text-on-surface">Platts IODEX 62% · 4m ago</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col sm:flex-row items-center justify-between gap-space-sm pt-space-xs text-on-surface-variant font-body-sm text-body-sm">
+<div class="flex items-center gap-space-sm flex-wrap">
+<span class="font-label-sm text-label-sm uppercase">Channels:</span>
+<span class="px-space-xs py-space-2xs bg-surface-container rounded text-[11px] font-data-tabular text-on-surface">Commodity Lead Desktop Alert</span>
+<span class="px-space-xs py-space-2xs bg-surface-container rounded text-[11px] font-data-tabular text-on-surface">Hedging Desk API</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="px-space-md py-space-xs bg-tertiary-fixed-dim hover:bg-on-tertiary-container text-tertiary-container hover:text-on-tertiary rounded font-label-md text-label-md transition-colors flex items-center gap-space-2xs shadow">
+<span class="material-symbols-outlined text-[14px]">bolt</span>
+<span>Review Forecast</span>
+</button>
+<button class="px-space-sm py-space-xs bg-surface hover:bg-surface-container text-on-surface rounded font-label-sm text-label-sm transition-colors">Dispatch Alert</button>
+<button class="px-space-sm py-space-xs bg-surface hover:bg-surface-container text-on-surface rounded font-label-sm text-label-sm transition-colors">Edit</button>
+</div>
+</div>
+</div>
+</div>
+<!-- RIGHT COLUMN: Docked Rule Configurator Studio (~33% width) -->
+<div class="lg:col-span-4 flex flex-col gap-space-base">
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-md flex flex-col gap-space-base sticky top-20">
+<!-- Studio Header -->
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="p-space-xs bg-surface-container text-on-surface rounded">
+<span class="material-symbols-outlined text-[18px]">build</span>
+</span>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Rule Configurator Studio</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Draft and deploy continuous event monitors</p>
+</div>
+</div>
+<span class="px-space-xs py-space-2xs bg-surface-container-high text-on-surface-variant rounded font-data-tabular text-[10px] font-bold">V3.2</span>
+</div>
+<!-- Quick-Fill Template Presets -->
+<div class="flex flex-col gap-space-2xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Quick-Fill Presets</span>
+<div class="grid grid-cols-2 gap-space-xs">
+<button class="px-space-sm py-space-xs bg-surface hover:bg-surface-container text-on-surface font-label-sm text-label-sm rounded text-left flex items-center gap-space-xs transition-colors">
+<span class="material-symbols-outlined text-[14px] text-secondary">trending_up</span>
+<span>Rate Ceiling</span>
+</button>
+<button class="px-space-sm py-space-xs bg-surface hover:bg-surface-container text-on-surface font-label-sm text-label-sm rounded text-left flex items-center gap-space-xs transition-colors">
+<span class="material-symbols-outlined text-[14px] text-secondary">arrow_downward</span>
+<span>Bunker Dip</span>
+</button>
+<button class="px-space-sm py-space-xs bg-surface hover:bg-surface-container text-on-surface font-label-sm text-label-sm rounded text-left flex items-center gap-space-xs transition-colors">
+<span class="material-symbols-outlined text-[14px] text-secondary">hourglass_bottom</span>
+<span>Canal Delay</span>
+</button>
+<button class="px-space-sm py-space-xs bg-surface hover:bg-surface-container text-on-surface font-label-sm text-label-sm rounded text-left flex items-center gap-space-xs transition-colors">
+<span class="material-symbols-outlined text-[14px] text-secondary">thunderstorm</span>
+<span>Weather Warning</span>
+</button>
+</div>
+</div>
+<!-- Form Fields -->
+<div class="flex flex-col gap-space-md">
+<!-- Rule Name -->
+<div class="flex flex-col gap-space-2xs">
+<label class="font-label-sm text-label-sm text-on-surface font-medium">Rule Name</label>
+<input class="w-full h-8 px-space-sm bg-surface text-on-surface font-body-md text-body-md rounded focus:outline-none focus:bg-surface-container-lowest transition-colors" type="text" value="Paradip Monsoon Demurrage Spike"/>
+</div>
+<!-- Data Stream / Source -->
+<div class="flex flex-col gap-space-2xs">
+<label class="font-label-sm text-label-sm text-on-surface font-medium">Data Stream / Metric Source</label>
+<select class="w-full h-8 px-space-sm bg-surface text-on-surface font-body-md text-body-md rounded focus:outline-none cursor-pointer">
+<option>Baltic Exchange Fixtures (C5, P2A, C3)</option>
+<option>Platts Bunkerwire (VLSFO, LSMGO)</option>
+<option selected="">AIS Satellite Queue Tracking</option>
+<option>ECMWF Maritime Weather</option>
+</select>
+</div>
+<!-- Corridor / Route Scope -->
+<div class="flex flex-col gap-space-2xs">
+<label class="font-label-sm text-label-sm text-on-surface font-medium">Corridor / Geographic Scope</label>
+<select class="w-full h-8 px-space-sm bg-surface text-on-surface font-body-md text-body-md rounded focus:outline-none cursor-pointer">
+<option selected="">Port Hedland → Paradip Berth</option>
+<option>Kalimantan → Krishnapatnam</option>
+<option>Global Maritime Chokepoints (Malacca/Suez)</option>
+<option>Singapore Anchorage Outer Limits</option>
+</select>
+</div>
+<!-- Trigger Logic Segmented Switch -->
+<div class="flex flex-col gap-space-2xs">
+<label class="font-label-sm text-label-sm text-on-surface font-medium">Evaluation Condition</label>
+<div class="grid grid-cols-3 p-space-2xs bg-surface rounded text-center font-label-sm text-label-sm">
+<button class="py-space-xs rounded bg-surface-container-lowest text-on-surface font-semibold shadow-sm">
+                Exceeds (&gt;)
+              </button>
+<button class="py-space-xs rounded text-on-surface-variant hover:text-on-surface transition-colors">
+                Drops Below (&lt;)
+              </button>
+<button class="py-space-xs rounded text-on-surface-variant hover:text-on-surface transition-colors">
+                Delta (±%)
+              </button>
+</div>
+</div>
+<!-- Threshold Value & Unit -->
+<div class="grid grid-cols-2 gap-space-sm">
+<div class="flex flex-col gap-space-2xs">
+<label class="font-label-sm text-label-sm text-on-surface font-medium">Threshold Value</label>
+<div class="relative">
+<input class="w-full h-8 px-space-sm bg-surface font-data-tabular-bold text-[13px] text-on-surface rounded focus:outline-none" type="text" value="3.5"/>
+</div>
+</div>
+<div class="flex flex-col gap-space-2xs">
+<label class="font-label-sm text-label-sm text-on-surface font-medium">Unit</label>
+<select class="w-full h-8 px-space-sm bg-surface text-on-surface font-body-md text-body-md rounded focus:outline-none">
+<option>Days (Demurrage)</option>
+<option>USD / MT (Freight)</option>
+<option>Vessels (Count)</option>
+<option>Meters (Wave)</option>
+</select>
+</div>
+</div>
+<span class="font-data-tabular text-[10px] text-on-surface-variant -mt-space-xs">
+            Historical 30-day mean: 2.1 Days (Confidence 94%)
+          </span>
+<!-- Notification Routing Targets -->
+<div class="flex flex-col gap-space-2xs pt-space-2xs">
+<label class="font-label-sm text-label-sm text-on-surface font-medium">Multi-Channel Routing</label>
+<div class="grid grid-cols-2 gap-space-xs">
+<label class="flex items-center gap-space-xs p-space-xs bg-surface rounded cursor-pointer hover:bg-surface-container-low transition-colors">
+<input checked="" class="w-3.5 h-3.5 accent-secondary" type="checkbox"/>
+<span class="font-body-sm text-body-sm text-on-surface">Slack Webhook</span>
+</label>
+<label class="flex items-center gap-space-xs p-space-xs bg-surface rounded cursor-pointer hover:bg-surface-container-low transition-colors">
+<input checked="" class="w-3.5 h-3.5 accent-secondary" type="checkbox"/>
+<span class="font-body-sm text-body-sm text-on-surface">PagerDuty (Lead)</span>
+</label>
+<label class="flex items-center gap-space-xs p-space-xs bg-surface rounded cursor-pointer hover:bg-surface-container-low transition-colors">
+<input checked="" class="w-3.5 h-3.5 accent-secondary" type="checkbox"/>
+<span class="font-body-sm text-body-sm text-on-surface">SMS Desk</span>
+</label>
+<label class="flex items-center gap-space-xs p-space-xs bg-surface rounded cursor-pointer hover:bg-surface-container-low transition-colors">
+<input class="w-3.5 h-3.5 accent-secondary" type="checkbox"/>
+<span class="font-body-sm text-body-sm text-on-surface">In-App Banner</span>
+</label>
+</div>
+</div>
+<!-- Cooldown Frequency Dropdown -->
+<div class="flex flex-col gap-space-2xs">
+<label class="font-label-sm text-label-sm text-on-surface font-medium">Cooldown &amp; Debounce</label>
+<select class="w-full h-8 px-space-sm bg-surface text-on-surface font-body-sm text-body-sm rounded focus:outline-none">
+<option>Every 15 mins (Suppresses duplicate ping)</option>
+<option>Once per trading session</option>
+<option>Instant continuous fire</option>
+</select>
+</div>
+</div>
+<!-- Studio Action Buttons -->
+<div class="flex flex-col gap-space-xs pt-space-sm">
+<button class="w-full h-10 bg-tertiary-fixed-dim hover:bg-on-tertiary-container text-tertiary-container hover:text-on-tertiary font-headline-sm text-headline-sm rounded shadow-sm flex items-center justify-center gap-space-xs transition-all">
+<span class="material-symbols-outlined text-[18px]">publish</span>
+<span>Save &amp; Deploy Rule</span>
+</button>
+<button class="w-full h-8 bg-surface hover:bg-surface-container text-on-surface-variant hover:text-on-surface font-label-md text-label-md rounded transition-colors">
+            Save as Draft Blueprint
+          </button>
+</div>
+</div>
+</div>
+</div>
+<!-- BOTTOM FULL-WIDTH: Chronological Signal Firing & Notification Ledger -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-md">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm pb-space-xs">
+<div class="flex items-center gap-space-sm">
+<span class="p-space-xs bg-surface-container text-on-surface rounded">
+<span class="material-symbols-outlined text-[18px]">history</span>
+</span>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Chronological Signal Firing &amp; Notification Ledger</h2>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Immutable audit trail of automated threshold breaches and multi-channel dispatches</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="font-data-tabular text-[11px] text-on-surface-variant">Showing last 7 days</span>
+<button class="h-8 px-space-md bg-surface hover:bg-surface-container text-on-surface font-label-sm text-label-sm rounded flex items-center gap-space-xs transition-colors shadow-sm">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">file_download</span>
+<span>Export CSV</span>
+</button>
+</div>
+</div>
+<!-- Tabular Audit Log Strip -->
+<div class="overflow-x-auto">
+<table class="w-full text-left font-body-sm text-body-sm">
+<thead>
+<tr class="bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
+<th class="py-space-sm px-space-md rounded-l">Timestamp (UTC)</th>
+<th class="py-space-sm px-space-md">Triggered Rule</th>
+<th class="py-space-sm px-space-md">Observed / Threshold Value</th>
+<th class="py-space-sm px-space-md">Dispatch Channels</th>
+<th class="py-space-sm px-space-md rounded-r">Resolution Status</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container-low font-data-tabular text-data-tabular">
+<!-- Row 1 -->
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="py-space-sm px-space-md text-on-surface font-semibold">
+              Aug 12, 14:10 UTC
+            </td>
+<td class="py-space-sm px-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-error"></span>
+<span class="text-on-surface font-medium">Sunda Strait &amp; Paradip Congestion</span>
+</div>
+</td>
+<td class="py-space-sm px-space-md text-error font-bold">
+              4.2 Days <span class="text-on-surface-variant font-normal">(Limit 3.5d)</span>
+</td>
+<td class="py-space-sm px-space-md text-on-surface-variant">
+              Commodity Desk (SMS + Slack #chartering)
+            </td>
+<td class="py-space-sm px-space-md">
+<span class="px-space-xs py-space-2xs bg-secondary-container/40 text-on-secondary-fixed-variant rounded font-data-tabular-bold text-[10px] uppercase">
+                Acknowledged by Lead
+              </span>
+</td>
+</tr>
+<!-- Row 2 -->
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="py-space-sm px-space-md text-on-surface font-semibold">
+              Aug 12, 09:30 UTC
+            </td>
+<td class="py-space-sm px-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-on-tertiary-container"></span>
+<span class="text-on-surface font-medium">Iron Ore CFR Paradip Price Surge</span>
+</div>
+</td>
+<td class="py-space-sm px-space-md text-on-tertiary-container font-bold">
+              +2.8% in 4h <span class="text-on-surface-variant font-normal">(Limit +3.0%)</span>
+</td>
+<td class="py-space-sm px-space-md text-on-surface-variant">
+              In-App Notification, PagerDuty
+            </td>
+<td class="py-space-sm px-space-md">
+<span class="px-space-xs py-space-2xs bg-surface-container-high text-on-surface-variant rounded font-data-tabular-bold text-[10px] uppercase">
+                Direct Fix Initiated
+              </span>
+</td>
+</tr>
+<!-- Row 3 -->
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="py-space-sm px-space-md text-on-surface font-semibold">
+              Aug 10, 16:45 UTC
+            </td>
+<td class="py-space-sm px-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="text-on-surface font-medium">Baltic C5 Volatility Spike</span>
+</div>
+</td>
+<td class="py-space-sm px-space-md text-on-surface font-bold">
+              $12.35/MT <span class="text-on-surface-variant font-normal">(Limit $12.00/MT)</span>
+</td>
+<td class="py-space-sm px-space-md text-on-surface-variant">
+              Automated Chartering Engine Webhook
+            </td>
+<td class="py-space-sm px-space-md">
+<span class="px-space-xs py-space-2xs bg-secondary-container/40 text-on-secondary-fixed-variant rounded font-data-tabular-bold text-[10px] uppercase">
+                Alpha Hedging Triggered
+              </span>
+</td>
+</tr>
+<!-- Row 4 -->
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="py-space-sm px-space-md text-on-surface font-semibold">
+              Aug 08, 11:20 UTC
+            </td>
+<td class="py-space-sm px-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="text-on-surface font-medium">Singapore VLSFO Bunker Dip</span>
+</div>
+</td>
+<td class="py-space-sm px-space-md text-secondary font-bold">
+              $594.20/MT <span class="text-on-surface-variant font-normal">(Limit $595.00/MT)</span>
+</td>
+<td class="py-space-sm px-space-md text-on-surface-variant">
+              Fuel Bunkering Desk, SMS
+            </td>
+<td class="py-space-sm px-space-md">
+<span class="px-space-xs py-space-2xs bg-secondary-fixed/50 text-secondary rounded font-data-tabular-bold text-[10px] uppercase">
+                1,200 MT Purchased
+              </span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Pagination & Retention Status -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm pt-space-xs text-on-surface-variant font-body-sm text-body-sm">
+<span>Ledger retention standard: 90 days encrypted audit compliance</span>
+<div class="flex items-center gap-space-xs">
+<button class="px-space-sm py-space-2xs bg-surface text-on-surface-variant rounded text-label-sm font-label-sm hover:bg-surface-container transition-colors disabled:opacity-40">Previous</button>
+<span class="px-space-xs font-data-tabular text-[11px]">Page 1 of 4</span>
+<button class="px-space-sm py-space-2xs bg-surface text-on-surface-variant rounded text-label-sm font-label-sm hover:bg-surface-container transition-colors">Next</button>
+</div>
+</div>
+</div>
+</div></main></div></body></html>

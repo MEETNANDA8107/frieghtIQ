@@ -1,0 +1,32 @@
+.env
+api_keys.env
+
+cat > .gitignore <<'EOF'
+# Environment / secrets
+.env
+.env.*
+api_keys.env
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+env/
+
+# Node
+node_modules/
+
+# SQLite database files
+*.db
+*.db-shm
+*.db-wal
+
+# OS files
+desktop.ini
+.DS_Store
+
+# Build/cache
+dist/
+build/
+EOF.next/

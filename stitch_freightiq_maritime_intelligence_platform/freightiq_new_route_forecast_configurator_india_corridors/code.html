@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+                "surface-container": "#e5eeff",
+                "on-tertiary": "#ffffff",
+                "on-error-container": "#93000a",
+                "error": "#ba1a1a",
+                "outline-variant": "#c4c6cd",
+                "outline": "#74777d",
+                "on-tertiary-fixed": "#291800",
+                "surface-bright": "#f8f9ff",
+                "on-primary-fixed": "#091c31",
+                "on-background": "#021c36",
+                "tertiary": "#060200",
+                "surface-container-high": "#dce9ff",
+                "on-primary": "#ffffff",
+                "secondary-container": "#aaefee",
+                "on-secondary-fixed": "#002020",
+                "inverse-surface": "#1a324c",
+                "inverse-primary": "#b6c8e4",
+                "tertiary-container": "#2c1900",
+                "on-primary-container": "#7586a0",
+                "surface": "#f8f9ff",
+                "primary-fixed": "#d3e4ff",
+                "on-surface-variant": "#44474d",
+                "secondary-fixed-dim": "#8fd2d2",
+                "surface-container-highest": "#d2e4ff",
+                "background": "#f8f9ff",
+                "primary-fixed-dim": "#b6c8e4",
+                "tertiary-fixed": "#ffddb4",
+                "tertiary-fixed-dim": "#ffb955",
+                "primary": "#00030b",
+                "on-secondary-container": "#276e6e",
+                "on-secondary-fixed-variant": "#004f50",
+                "surface-tint": "#4e6078",
+                "surface-container-lowest": "#ffffff",
+                "secondary-fixed": "#aaefee",
+                "surface-variant": "#d2e4ff",
+                "surface-dim": "#c5dcfd",
+                "on-error": "#ffffff",
+                "on-primary-fixed-variant": "#37485f",
+                "secondary": "#1f6868",
+                "error-container": "#ffdad6",
+                "surface-container-low": "#eff4ff",
+                "primary-container": "#0b1e33",
+                "inverse-on-surface": "#eaf1ff",
+                "on-tertiary-fixed-variant": "#633f00",
+                "on-surface": "#021c36",
+                "on-tertiary-container": "#b77800",
+                "on-secondary": "#ffffff"
+        },
+        "borderRadius": {
+                "DEFAULT": "0.125rem",
+                "lg": "0.25rem",
+                "xl": "0.5rem",
+                "full": "0.75rem"
+        },
+        "spacing": {
+                "space-xl": "2rem",
+                "space-2xl": "3rem",
+                "margin-mobile": "1rem",
+                "space-base": "1rem",
+                "space-sm": "0.5rem",
+                "gutter-mobile": "0.5rem",
+                "space-xs": "0.25rem",
+                "space-2xs": "0.125rem",
+                "space-md": "0.75rem",
+                "gutter-desktop": "1rem",
+                "margin-desktop": "1.5rem",
+                "space-lg": "1.5rem"
+        },
+        "fontFamily": {
+                "data-tabular": [
+                        "JetBrains Mono"
+                ],
+                "body-sm": [
+                        "Inter"
+                ],
+                "display": [
+                        "Inter"
+                ],
+                "label-sm": [
+                        "Inter"
+                ],
+                "body-md": [
+                        "Inter"
+                ],
+                "headline-lg-mobile": [
+                        "Inter"
+                ],
+                "label-md": [
+                        "Inter"
+                ],
+                "body-lg": [
+                        "Inter"
+                ],
+                "headline-sm": [
+                        "Inter"
+                ],
+                "data-metric": [
+                        "JetBrains Mono"
+                ],
+                "data-tabular-bold": [
+                        "JetBrains Mono"
+                ],
+                "headline-md": [
+                        "Inter"
+                ],
+                "headline-lg": [
+                        "Inter"
+                ]
+        },
+        "fontSize": {
+                "data-tabular": [
+                        "12px",
+                        {
+                                "lineHeight": "16px",
+                                "letterSpacing": "-0.01em",
+                                "fontWeight": "500"
+                        }
+                ],
+                "body-sm": [
+                        "12px",
+                        {
+                                "lineHeight": "16px",
+                                "letterSpacing": "0.005em",
+                                "fontWeight": "400"
+                        }
+                ],
+                "display": [
+                        "36px",
+                        {
+                                "lineHeight": "44px",
+                                "letterSpacing": "-0.025em",
+                                "fontWeight": "700"
+                        }
+                ],
+                "label-sm": [
+                        "11px",
+                        {
+                                "lineHeight": "14px",
+                                "letterSpacing": "0.03em",
+                                "fontWeight": "600"
+                        }
+                ],
+                "body-md": [
+                        "13px",
+                        {
+                                "lineHeight": "18px",
+                                "letterSpacing": "0em",
+                                "fontWeight": "400"
+                        }
+                ],
+                "headline-lg-mobile": [
+                        "22px",
+                        {
+                                "lineHeight": "28px",
+                                "letterSpacing": "-0.015em",
+                                "fontWeight": "700"
+                        }
+                ],
+                "label-md": [
+                        "12px",
+                        {
+                                "lineHeight": "16px",
+                                "letterSpacing": "0.02em",
+                                "fontWeight": "600"
+                        }
+                ],
+                "body-lg": [
+                        "15px",
+                        {
+                                "lineHeight": "22px",
+                                "letterSpacing": "-0.005em",
+                                "fontWeight": "400"
+                        }
+                ],
+                "headline-sm": [
+                        "16px",
+                        {
+                                "lineHeight": "22px",
+                                "letterSpacing": "-0.01em",
+                                "fontWeight": "600"
+                        }
+                ],
+                "data-metric": [
+                        "22px",
+                        {
+                                "lineHeight": "26px",
+                                "letterSpacing": "-0.03em",
+                                "fontWeight": "600"
+                        }
+                ],
+                "data-tabular-bold": [
+                        "12px",
+                        {
+                                "lineHeight": "16px",
+                                "letterSpacing": "-0.01em",
+                                "fontWeight": "700"
+                        }
+                ],
+                "headline-md": [
+                        "20px",
+                        {
+                                "lineHeight": "26px",
+                                "letterSpacing": "-0.015em",
+                                "fontWeight": "600"
+                        }
+                ],
+                "headline-lg": [
+                        "28px",
+                        {
+                                "lineHeight": "34px",
+                                "letterSpacing": "-0.02em",
+                                "fontWeight": "700"
+                        }
+                ]
+        }
+},
+    },
+  }</script></head><body class="bg-background font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 h-16 bg-primary-container text-on-primary z-50 flex items-center justify-between px-margin-desktop shadow-[0_1px_8px_rgba(0,0,0,0.12)]"><div class="flex items-center gap-space-lg"><div class="flex items-center gap-space-sm"><img alt="FreightIQ Brand Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UsVHowXyyCiV5p0yVaF0lf614Llv2xW7fWrIyKokC_KYpSf8N8OPpMTzhYLgT86RATxu37Tfwxkb51_Ci9HcqXg6wcpPQKXTCaYYZbGq-VP5-rwu-d2QFTdUWSnujZBeKbZiXU4kW4P42SYyNl5tRmbBzZ-rg8s_TD2cGwWKA89zU42hk1-uvDk-XjvbbxqRRG2va_9mD9FS_e_kmeRZS191X7ymSGEkUtwQISK119BDXa3ZHCVzQ4OQ"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-primary tracking-tight font-bold leading-none">FreightIQ</span><span class="font-label-sm text-label-sm text-on-primary-container tracking-wider uppercase leading-none mt-space-2xs">Maritime Decision Engine</span></div></div><div class="hidden xl:flex items-center gap-space-md bg-surface-container-lowest/10 px-space-md py-space-xs rounded border border-surface-container-highest/20 text-on-primary font-data-tabular text-data-tabular"><div class="flex items-center gap-space-xs"><span class="font-label-sm text-label-sm text-surface-variant font-semibold uppercase tracking-wider">BDI</span><span class="font-data-tabular-bold text-data-tabular-bold text-on-primary">1,842</span><span class="font-label-sm text-label-sm text-secondary-container flex items-center"><span class="material-symbols-outlined text-[12px]">arrow_drop_up</span>+1.4%</span></div><div class="w-px h-3 bg-surface-container-highest/30"></div><div class="flex items-center gap-space-xs"><span class="font-label-sm text-label-sm text-surface-variant font-semibold uppercase tracking-wider">VLSFO</span><span class="font-data-tabular-bold text-data-tabular-bold text-on-primary">$612/MT</span></div><div class="w-px h-3 bg-surface-container-highest/30"></div><div class="flex items-center gap-space-xs"><span class="font-label-sm text-label-sm text-surface-variant font-semibold uppercase tracking-wider">Capesize</span><span class="font-data-tabular-bold text-data-tabular-bold text-on-primary">$22,400/d</span><span class="font-label-sm text-label-sm text-secondary-container flex items-center"><span class="material-symbols-outlined text-[12px]">arrow_drop_up</span>+2.1%</span></div></div></div><div class="flex items-center gap-space-lg"><div class="relative hidden md:flex items-center w-80"><span class="material-symbols-outlined absolute left-space-sm text-surface-variant pointer-events-none text-[18px]">search</span><input class="w-full bg-surface-container-lowest/10 text-on-primary placeholder:text-surface-variant/70 pl-9 pr-space-sm py-space-xs text-body-sm font-body-sm rounded border border-surface-container-highest/20 focus:outline-none focus:border-secondary-container focus:bg-surface-container-lowest/15 transition-all" placeholder="Search commodity, port (e.g., C3, Qingdao), vessel..." type="text"/></div><div class="flex items-center gap-space-md"><button class="relative p-space-xs rounded text-surface-variant hover:text-on-primary hover:bg-surface-container-lowest/10 transition-colors"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1 right-1 flex items-center justify-center w-4 h-4 bg-tertiary-fixed text-on-tertiary-fixed font-data-tabular-bold text-[10px] rounded-full">3</span></button><div class="h-6 w-px bg-surface-container-highest/20"></div><div class="flex items-center gap-space-sm"><div class="flex flex-col text-right hidden sm:block"><span class="font-headline-sm text-label-md text-on-primary leading-tight">Procurement Desk</span><span class="font-label-sm text-label-sm text-surface-variant uppercase tracking-wider">Commodity Lead</span></div><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-surface-container-highest/30" src="https://lh3.googleusercontent.com/aida/AEtjO1U3oIlU7I-tstuRGWz6Di6BrOKcF-uMeZZUpzuu6m_E_T8_wHYJ7EOxNuTVPY4m2EqqV0621e80pAOXH3JC1KcW2eNTQqTn9mJlfpGYsl3mfOGPq9T847dV9TKFnsrPiI5AbEBTpBmq0v0bfLp5UfPbqmxUs8oQqM99DsFuzZrKKk7AvQG965vuS09i7U7ORWG9PII-r7ux4k3fd9xyVQbj5q6VLAbS0RvMDZ6tlStF9X7J72tzLoAi"/></div></div></div></header><aside class="fixed left-0 top-16 bottom-0 w-64 bg-surface-container-lowest border-r border-surface-container-high z-40 flex flex-col justify-between py-space-md"><div class="flex flex-col gap-space-xs px-space-sm"><div class="px-space-md py-space-xs font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-semibold">Commercial Terminal</div><nav class="flex flex-col gap-space-2xs" data-active-classes="bg-surface-container text-on-surface font-semibold border-l-2 border-primary"><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg text-on-surface-variant font-body-md text-body-md hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="overview" href="#"><span class="material-symbols-outlined text-[20px]">dashboard</span><span>Overview</span></a><a aria-current="page" class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg transition-colors bg-surface-container text-on-surface font-semibold border-l-2 border-primary" data-path="new-forecast" href="#"><span class="material-symbols-outlined text-[20px]">add_chart</span><span>New Forecast</span></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant font-body-md text-body-md hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="forecast-results" href="#"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-[20px]">insights</span><span>Forecast Results</span></div><span class="font-data-tabular text-label-sm bg-secondary-container text-on-secondary-container px-1.5 py-0.5 rounded">AI</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg text-on-surface-variant font-body-md text-body-md hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="reports-and-history" href="#"><span class="material-symbols-outlined text-[20px]">history_edu</span><span>Reports &amp; History</span></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant font-body-md text-body-md hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="alerts-and-rules" href="#"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-[20px]">tune</span><span>Alerts &amp; Rules</span></div><span class="font-data-tabular text-label-sm bg-tertiary-fixed text-on-tertiary-fixed font-semibold px-1.5 py-0.5 rounded-full">3</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg text-on-surface-variant font-body-md text-body-md hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="settings" href="#"><span class="material-symbols-outlined text-[20px]">settings</span><span>Settings</span></a></nav></div><div class="px-space-md pt-space-md border-t border-surface-container-high flex flex-col gap-space-xs"><div class="flex items-center justify-between text-on-surface-variant"><span class="font-label-sm text-label-sm font-semibold uppercase tracking-wider">Engine Mode</span><span class="font-data-tabular text-label-sm text-secondary font-bold">PROD-LIVE</span></div><div class="flex items-center gap-space-xs font-body-sm text-body-sm text-on-surface-variant"><span class="w-2 h-2 rounded-full bg-secondary-container"></span><span>Baltic Exchange Feed Active</span></div></div></aside><div class="pl-64"><main class="w-full pt-16 px-gutter-desktop min-h-screen bg-background"><div class="flex flex-col w-full">
+<div class="py-space-md mb-space-base flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div>
+<div class="flex items-center gap-space-xs text-secondary mb-space-2xs">
+<span class="material-symbols-outlined text-[16px]">terminal</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider font-semibold">Chartering Desk • Voyage Modeling Studio</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Configure Maritime Procurement &amp; Freight Forecast</h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-4xl mt-space-2xs">
+        AI multi-variable model factoring bunker curves, canal backlogs, seasonal fleet availability, and macro commodity demand.
+      </p>
+</div>
+<div class="flex items-center gap-space-sm self-start md:self-auto">
+<div class="flex items-center gap-space-xs bg-surface-container px-space-md py-space-xs rounded-xl">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+<span class="font-data-tabular-bold text-data-tabular-bold text-on-surface">MODEL v4.8: ONLINE</span>
+</div>
+<button class="bg-surface-container hover:bg-surface-container-high px-space-md py-space-xs rounded font-label-md text-label-md text-on-surface transition-colors flex items-center gap-space-xs" type="button">
+<span class="material-symbols-outlined text-[16px]">history</span>
+<span>Load Template</span>
+</button>
+</div>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded-xl mb-space-lg flex flex-wrap items-center gap-space-sm">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider px-space-xs font-bold">Quick Presets:</span>
+<button class="lane-preset bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface px-space-md py-1 rounded font-data-tabular text-data-tabular transition-all flex items-center gap-space-xs" data-commodity="Thermal Coal" data-days="6.2" data-dest="Krishnapatnam, India (IN-KRI)" data-nm="2,080" data-origin="Kalimantan, Indonesia (ID)" data-spot="$8.40/MT" data-vessel="Panamax" type="button">
+<span>Kalimantan (ID) → Krishnapatnam (IN) • Thermal Coal • Panamax</span>
+</button>
+<button class="lane-preset active bg-surface-container-lowest text-on-surface shadow-sm hover:bg-surface-container px-space-md py-1 rounded font-data-tabular text-data-tabular transition-all flex items-center gap-space-xs" data-commodity="Iron Ore (Fines 62% Fe)" data-days="9.8" data-dest="Paradip, India (IN-PRT)" data-nm="3,280" data-origin="Port Hedland, Australia (AU-PHE)" data-spot="$10.20/MT" data-vessel="Capesize" type="button">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span class="font-semibold">Port Hedland (AU) → Paradip (IN) • Iron Ore 62% • Capesize</span>
+</button>
+<button class="lane-preset bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface px-space-md py-1 rounded font-data-tabular text-data-tabular transition-all flex items-center gap-space-xs" data-commodity="Iron Ore / Coking Coal" data-days="9.5" data-dest="Visakhapatnam, India (IN-VTZ)" data-nm="3,190" data-origin="Dampier, Australia (AU)" data-spot="$10.05/MT" data-vessel="Capesize" type="button">
+<span>Dampier (AU) → Visakhapatnam (IN) • Iron Ore / Coking Coal • Capesize/Panamax</span>
+</button>
+<button class="lane-preset bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface px-space-md py-1 rounded font-data-tabular text-data-tabular transition-all flex items-center gap-space-xs" data-commodity="Thermal Coal" data-days="6.8" data-dest="Kakinada, India (IN-KAK)" data-nm="2,240" data-origin="Samarinda, Indonesia (ID)" data-spot="$8.75/MT" data-vessel="Supramax" type="button">
+<span>Samarinda (ID) → Kakinada (IN) • Thermal Coal • Supramax</span>
+</button>
+</div>
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-gutter-desktop items-start pb-space-2xl">
+<div class="xl:col-span-7 flex flex-col gap-space-base">
+<form class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-lg" id="forecast-form">
+<div>
+<div class="flex items-center justify-between mb-space-xs">
+<label class="font-label-md text-label-md text-on-surface font-semibold flex items-center gap-space-xs" for="commodity-select">
+<span class="material-symbols-outlined text-[18px] text-secondary">layers</span>
+<span>Select Bulk Commodity</span>
+</label>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">HS Code: 2601.11</span>
+</div>
+<div class="relative">
+<select class="w-full h-10 bg-surface-container-low text-on-surface rounded px-space-md font-body-md text-body-md focus:outline-none focus:bg-surface-container-lowest transition-all appearance-none cursor-pointer" id="commodity-select">
+<option selected="" value="iron-ore">Iron Ore (Fines 62% Fe) - Dry Bulk Index Tier 1</option>
+<option value="thermal-coal">Thermal Coal (NAR 5,800 / 6,000 kcal/kg Indo &amp; Aussie)</option>
+<option value="coking-coal">Met / Coking Coal (Queensland Hard Coking spec)</option>
+<option value="soybeans">Soybeans (Agricultural Bulk - US / Santos export)</option>
+<option value="wheat">Milling Wheat (Bulk Grain Handysize/Panamax)</option>
+<option value="crude-oil">Crude Oil (VLCC / Suezmax Dirty Tanker spec)</option>
+</select>
+<span class="material-symbols-outlined absolute right-space-md top-2.5 text-on-surface-variant pointer-events-none text-[20px]">unfold_more</span>
+</div>
+<div class="flex flex-wrap items-center gap-space-sm mt-space-xs text-on-surface-variant font-body-sm text-body-sm">
+<div class="flex items-center gap-1">
+<span class="font-data-tabular text-secondary font-semibold">Baltic Capesize C5 Index (Proxy AU→Qingdao)</span>
+<div class="group relative cursor-pointer inline-flex items-center">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant hover:text-secondary">info</span>
+<div class="absolute left-1/2 -translate-x-1/2 bottom-full mb-2 hidden group-hover:block w-72 p-2 bg-primary text-on-primary text-xs rounded shadow-lg z-30 pointer-events-none">
+Proxy: C5 published benchmark is $11.45/MT; typical Australia–India Capesize differential is -$1.10 to -$1.35/MT ($10.20/MT implied).
+</div>
+</div>
+</div>
+<span>•</span>
+<span class="text-tertiary-container bg-tertiary-fixed px-1.5 py-0.5 rounded font-label-sm text-label-sm font-semibold">Proxy Differential: -$1.25/MT vs C5</span>
+<span>•</span>
+<span>Density: 2.4 - 2.8 t/m³</span>
+</div>
+</div>
+<div>
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-md text-label-md text-on-surface font-semibold flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px] text-secondary">explore</span>
+<span>Corridor Geography &amp; Port Infrastructure</span>
+</span>
+<button class="p-1 rounded hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors flex items-center" id="swap-ports" title="Swap Origin and Destination" type="button">
+<span class="material-symbols-outlined text-[18px]">swap_horiz</span>
+</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div class="bg-surface-container-low p-space-md rounded-lg flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-bold">Origin Port (Loading)</span>
+<span class="font-data-tabular text-label-sm bg-secondary-container text-on-secondary-container px-1 rounded font-semibold">AU-PHE</span>
+</div>
+<div class="relative">
+<input class="w-full bg-surface-container-lowest text-on-surface font-headline-sm text-headline-sm px-space-sm py-1.5 rounded focus:outline-none" id="origin-input" type="text" value="Port Hedland, Australia (AU-PHE)"/>
+</div>
+<div class="grid grid-cols-2 gap-space-xs pt-space-xs mt-space-2xs bg-surface-container-lowest/60 p-space-xs rounded">
+<div>
+<span class="block font-label-sm text-label-sm text-on-surface-variant">Max Draught:</span>
+<span class="font-data-tabular-bold text-data-tabular-bold text-on-surface">18.2 m (Tidal)</span>
+</div>
+<div>
+<span class="block font-label-sm text-label-sm text-on-surface-variant">Berth Waiting:</span>
+<span class="font-data-tabular-bold text-data-tabular-bold text-on-surface flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-secondary"></span> 1.2 Days
+                  </span>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-low p-space-md rounded-lg flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-bold">Destination Port (Discharge)</span>
+<span class="font-data-tabular text-label-sm bg-surface-container-highest text-on-surface px-1 rounded font-semibold">IN-PRT</span>
+</div>
+<div class="relative">
+<select class="w-full bg-surface-container-lowest text-on-surface font-headline-sm text-headline-sm px-space-sm py-1.5 rounded focus:outline-none appearance-none cursor-pointer" id="dest-input">
+<option selected="" value="Paradip, India (IN-PRT)">Paradip, India (IN-PRT)</option>
+<option value="Visakhapatnam, India (IN-VTZ)">Visakhapatnam, India (IN-VTZ)</option>
+<option value="Krishnapatnam, India (IN-KRI)">Krishnapatnam, India (IN-KRI)</option>
+<option value="Kakinada, India (IN-KAK)">Kakinada, India (IN-KAK)</option>
+<option value="Gangavaram, India (IN-GGV)">Gangavaram, India (IN-GGV)</option>
+<option value="Chennai, India (IN-MAA)">Chennai, India (IN-MAA)</option>
+<option value="Ennore/Kamarajar, India (IN-ENR)">Ennore/Kamarajar, India (IN-ENR)</option>
+</select>
+<span class="material-symbols-outlined absolute right-space-sm top-2 text-on-surface-variant pointer-events-none text-[20px]">expand_more</span>
+</div>
+<div class="grid grid-cols-2 gap-space-xs pt-space-xs mt-space-2xs bg-surface-container-lowest/60 p-space-xs rounded">
+<div>
+<span class="block font-label-sm text-label-sm text-on-surface-variant">Max Draught:</span>
+<span class="font-data-tabular-bold text-data-tabular-bold text-on-surface">17.8 m (Deep Draft)</span>
+</div>
+<div>
+<span class="block font-label-sm text-label-sm text-on-surface-variant">Berth Waiting:</span>
+<span class="font-data-tabular-bold text-data-tabular-bold text-tertiary-container flex items-center gap-1 font-semibold">
+<span class="w-2 h-2 rounded-full bg-tertiary-fixed-dim"></span> 2.8 Days (Monsoon)
+                  </span>
+</div>
+<div>
+<span class="block font-label-sm text-label-sm text-on-surface-variant mt-1">Discharge Rate:</span>
+<span class="font-data-tabular-bold text-data-tabular-bold text-on-surface">35,000 T/day</span>
+</div>
+<div>
+<span class="block font-label-sm text-label-sm text-on-surface-variant mt-1">Weather Status:</span>
+<span class="font-data-tabular-bold text-data-tabular-bold text-secondary flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">waves</span> Bay of Bengal Swell
+                  </span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<label class="font-label-md text-label-md text-on-surface font-semibold flex items-center gap-space-xs" for="volume-input">
+<span class="material-symbols-outlined text-[18px] text-secondary">weight</span>
+<span>Cargo Volume</span>
+</label>
+<div class="bg-surface-container p-0.5 rounded flex items-center">
+<button class="px-2 py-0.5 font-label-sm text-label-sm rounded bg-surface-container-lowest text-on-surface font-bold shadow-sm" id="unit-mt" type="button">MT</button>
+<button class="px-2 py-0.5 font-label-sm text-label-sm rounded text-on-surface-variant hover:text-on-surface" id="unit-lt" type="button">LT</button>
+</div>
+</div>
+<div class="relative">
+<input class="w-full h-10 bg-surface-container-low text-on-surface font-data-tabular-bold text-headline-sm px-space-md rounded focus:outline-none" id="volume-input" type="text" value="180,000"/>
+<span class="absolute right-space-md top-2.5 font-label-md text-label-md text-on-surface-variant">Tonnes (+/- 10% MOLOO)</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Typical Capesize standard stem payload: 170,000 - 190,000 MT</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md text-on-surface font-semibold flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px] text-secondary">date_range</span>
+<span>Target Delivery Window (Laycan)</span>
+</label>
+<div class="grid grid-cols-2 gap-space-xs">
+<div class="relative">
+<span class="absolute left-space-xs top-2 font-label-sm text-label-sm text-on-surface-variant uppercase">Lay:</span>
+<input class="w-full h-10 bg-surface-container-low text-on-surface font-data-tabular text-body-md pl-10 pr-2 rounded focus:outline-none" type="date" value="2025-08-15"/>
+</div>
+<div class="relative">
+<span class="absolute left-space-xs top-2 font-label-sm text-label-sm text-on-surface-variant uppercase">Can:</span>
+<input class="w-full h-10 bg-surface-container-low text-on-surface font-data-tabular text-body-md pl-10 pr-2 rounded focus:outline-none" type="date" value="2025-09-04"/>
+</div>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">20-day strategic chartering booking horizon</span>
+</div>
+</div>
+<div>
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-md text-label-md text-on-surface font-semibold flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px] text-secondary">directions_boat</span>
+<span>Vessel Class Particulars</span>
+</span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">Dry Bulk Fleet Segmentation</span>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-space-sm" id="vessel-selector">
+<div class="vessel-card active cursor-pointer bg-primary-container text-on-primary p-space-md rounded-lg shadow-sm flex flex-col justify-between h-28 transition-all transform hover:-translate-y-0.5" data-vessel="Capesize">
+<div class="flex items-center justify-between">
+<span class="material-symbols-outlined text-[24px] text-secondary-container">directions_boat</span>
+<span class="w-2 h-2 rounded-full bg-secondary-container"></span>
+</div>
+<div>
+<span class="font-headline-sm text-headline-sm block leading-none">Capesize</span>
+<span class="font-label-sm text-label-sm text-on-primary-container block mt-1">120k – 200k DWT</span>
+</div>
+</div>
+<div class="vessel-card cursor-pointer bg-surface-container-low hover:bg-surface-container text-on-surface p-space-md rounded-lg flex flex-col justify-between h-28 transition-all transform hover:-translate-y-0.5" data-vessel="Panamax">
+<div class="flex items-center justify-between">
+<span class="material-symbols-outlined text-[24px] text-on-surface-variant">sailing</span>
+</div>
+<div>
+<span class="font-headline-sm text-headline-sm block leading-none">Panamax</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant block mt-1">65k – 85k DWT</span>
+</div>
+</div>
+<div class="vessel-card cursor-pointer bg-surface-container-low hover:bg-surface-container text-on-surface p-space-md rounded-lg flex flex-col justify-between h-28 transition-all transform hover:-translate-y-0.5" data-vessel="Supramax">
+<div class="flex items-center justify-between">
+<span class="material-symbols-outlined text-[24px] text-on-surface-variant">anchor</span>
+</div>
+<div>
+<span class="font-headline-sm text-headline-sm block leading-none">Supramax</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant block mt-1">50k – 60k DWT</span>
+</div>
+</div>
+<div class="vessel-card cursor-pointer bg-surface-container-low hover:bg-surface-container text-on-surface p-space-md rounded-lg flex flex-col justify-between h-28 transition-all transform hover:-translate-y-0.5" data-vessel="Handysize">
+<div class="flex items-center justify-between">
+<span class="material-symbols-outlined text-[24px] text-on-surface-variant">navigation</span>
+</div>
+<div>
+<span class="font-headline-sm text-headline-sm block leading-none">Handysize</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant block mt-1">28k – 40k DWT</span>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-low p-space-md rounded-lg flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded bg-surface-container-highest flex items-center justify-center text-on-surface">
+<span class="material-symbols-outlined">local_gas_station</span>
+</div>
+<div>
+<div class="font-label-md text-label-md font-semibold text-on-surface">Bunker Blend: VLSFO 0.5% (Singapore Benchmark)</div>
+<div class="font-data-tabular text-body-sm text-on-surface-variant">Current: $612.50/MT • Projected Consumption: 32.4 MT/day laden</div>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" id="carbon-toggle" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-surface-container-lowest after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-surface-container-lowest after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-secondary"></div>
+</label>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">EU ETS &amp; CII Tracking</span>
+<span class="font-label-sm text-label-sm text-secondary font-medium">Compliance Active ($74.20/tCO2e)</span>
+</div>
+</div>
+</div>
+<div class="pt-space-xs flex flex-col sm:flex-row items-center gap-space-md">
+<button class="w-full sm:w-auto flex-1 bg-tertiary-fixed-dim hover:bg-tertiary-fixed text-on-tertiary-fixed font-headline-sm text-headline-sm py-3.5 px-space-xl rounded shadow-md transition-all flex items-center justify-center gap-space-sm font-bold active:scale-[0.99]" id="generate-btn" type="submit">
+<span class="material-symbols-outlined text-[24px]">auto_awesome</span>
+<span>Generate AI Freight &amp; Cargo Forecast</span>
+</button>
+<button class="w-full sm:w-auto bg-surface-container hover:bg-surface-container-high text-on-surface px-space-lg py-3.5 rounded font-label-md text-label-md transition-colors flex items-center justify-center gap-space-xs" type="button">
+<span class="material-symbols-outlined text-[18px]">tune</span>
+<span>Monte Carlo (10k Runs)</span>
+</button>
+</div>
+</form>
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex items-center justify-between">
+<div class="flex items-center gap-space-sm text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-secondary text-[18px]">verified_user</span>
+<span>AIS Vessel Density feed updated 4 mins ago. FFA curves synced with Singapore SGX.</span>
+</div>
+<span class="font-data-tabular text-label-sm text-on-surface-variant font-semibold">LATENCY: 42ms</span>
+</div>
+</div>
+<div class="xl:col-span-5 flex flex-col gap-space-base">
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold block">Digital Twin Routing</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Calculated Nautical Passage</h2>
+</div>
+<span class="bg-surface-container text-on-surface font-data-tabular-bold text-label-sm px-2 py-1 rounded">IMO #9842104 REF</span>
+</div>
+<div class="relative bg-primary-container rounded-lg overflow-hidden h-64 p-space-md flex flex-col justify-between">
+<svg class="absolute inset-0 w-full h-full" preserveaspectratio="none" viewbox="0 0 500 300">
+<defs>
+<lineargradient id="routeGrad" x1="100%" x2="0%" y1="100%" y2="0%">
+<stop offset="0%" stop-color="#aaefee" stop-opacity="0.9"></stop>
+<stop offset="45%" stop-color="#ffb955" stop-opacity="0.9"></stop>
+<stop offset="100%" stop-color="#aaefee" stop-opacity="0.9"></stop>
+</lineargradient>
+<radialgradient cx="82%" cy="85%" id="glowAU" r="25%">
+<stop offset="0%" stop-color="#aaefee" stop-opacity="0.45"></stop>
+<stop offset="100%" stop-color="#aaefee" stop-opacity="0"></stop>
+</radialgradient>
+<radialgradient cx="24%" cy="22%" id="glowIndia" r="25%">
+<stop offset="0%" stop-color="#ffb955" stop-opacity="0.45"></stop>
+<stop offset="100%" stop-color="#ffb955" stop-opacity="0"></stop>
+</radialgradient>
+</defs>
+<!-- Schematic coastline geometry representing Indian Ocean, Indo-Malay Archipelago & India East Coast -->
+<path d="M 0,20 Q 80,40 120,70 L 110,140 Q 60,150 0,160 Z" fill="#021c36" opacity="0.5"></path>
+<path d="M 120,70 Q 150,55 190,80 L 160,110 Z" fill="#021c36" opacity="0.45"></path>
+<path d="M 230,120 Q 280,140 310,190 L 260,200 Z" fill="#021c36" opacity="0.3"></path>
+<path d="M 360,230 Q 430,220 500,240 L 500,300 L 330,300 Z" fill="#021c36" opacity="0.55"></path>
+<!-- Route Origin: Port Hedland (AU) around (410, 255) -->
+<circle cx="410" cy="255" fill="url(#glowAU)" r="26"></circle>
+<!-- Route Destination: Paradip (IN) around (120, 65) -->
+<circle cx="120" cy="65" fill="url(#glowIndia)" r="28"></circle>
+<!-- Waypoint and nautical arc: Hedland -> Sunda / Indian Ocean Transit -> Bay of Bengal Paradip -->
+<path d="M 410,255 C 330,220 260,180 235,145 C 195,100 150,85 120,65" fill="none" opacity="0.35" stroke="#aaefee" stroke-dasharray="5 5" stroke-width="2"></path>
+<path d="M 410,255 C 330,220 260,180 235,145 C 195,100 150,85 120,65" fill="none" id="nautical-track" stroke="url(#routeGrad)" stroke-linecap="round" stroke-width="3.5"></path>
+<!-- Origin marker -->
+<g transform="translate(410, 255)">
+<circle fill="#0b1e33" r="7" stroke="#aaefee" stroke-width="2.5"></circle>
+<circle fill="#ffffff" r="2.5"></circle>
+</g>
+<text fill="#f8f9ff" font-family="Inter" font-size="11" font-weight="600" text-anchor="end" x="400" y="275">Port Hedland (Load AU-PHE)</text>
+<!-- Chokepoint waypoint -->
+<g transform="translate(235, 145)">
+<rect fill="#ffb955" height="8" transform="rotate(45)" width="8" x="-4" y="-4"></rect>
+</g>
+<text fill="#dce9ff" font-family="JetBrains Mono" font-size="9" x="248" y="148">Sunda / Indian Ocean Passage</text>
+<!-- Destination marker -->
+<g transform="translate(120, 65)">
+<circle fill="#ffb955" r="7" stroke="#ffffff" stroke-width="2"></circle>
+<circle fill="#021c36" r="3"></circle>
+</g>
+<text fill="#f8f9ff" font-family="Inter" font-size="11" font-weight="700" x="135" y="62">Paradip (Discharge IN-PRT)</text>
+<!-- Active ping in Bay of Bengal approach -->
+<g transform="translate(170, 95)">
+<circle class="animate-ping" fill="#aaefee" opacity="0.25" r="12"></circle>
+<circle fill="#aaefee" r="4.5"></circle>
+</g>
+</svg>
+<div class="relative z-10 flex items-center justify-between">
+<span class="bg-primary/80 backdrop-blur text-on-primary px-space-sm py-0.5 rounded font-label-sm text-label-sm uppercase tracking-wider">
+              TRANSIT ROUTE: WESTERN AUSTRALIA → BAY OF BENGAL (PARADIP, INDIA)
+            </span>
+<span class="bg-secondary-container text-on-secondary-container font-data-tabular-bold text-label-sm px-2 py-0.5 rounded">
+              OPTIMAL TRACK
+            </span>
+</div>
+<div class="relative z-10 bg-surface-container-lowest/15 backdrop-blur-md p-space-sm rounded border-none flex items-center justify-around text-on-primary">
+<div class="text-center">
+<span class="font-label-sm text-label-sm text-surface-variant block uppercase">Total Distance</span>
+<span class="font-data-tabular-bold text-data-metric text-on-primary" id="preview-distance">3,280 NM</span>
+</div>
+<div class="h-8 w-px bg-surface-container-highest/20"></div>
+<div class="text-center">
+<span class="font-label-sm text-label-sm text-surface-variant block uppercase">Transit Duration</span>
+<span class="font-data-tabular-bold text-data-metric text-secondary-container" id="preview-duration">9.8 Days</span>
+</div>
+<div class="h-8 w-px bg-surface-container-highest/20"></div>
+<div class="text-center">
+<span class="font-label-sm text-label-sm text-surface-variant block uppercase">Service Speed</span>
+<span class="font-data-tabular-bold text-data-metric text-on-primary">14.0 kts</span>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-low p-space-md rounded-lg flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-semibold">Real-Time Market Benchmark</span>
+<div class="flex items-baseline gap-space-sm mt-0.5">
+<span class="font-data-metric text-headline-lg font-bold text-on-surface" id="preview-spot">$10.20</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">/ Wet Metric Tonne</span>
+</div>
+</div>
+<div class="text-right">
+<span class="font-label-sm text-label-sm bg-secondary-container text-on-secondary-container font-data-tabular-bold px-2 py-0.5 rounded uppercase">
+              EST. INDIA CAPE (C5 PROXY ADJUSTED) • -9.5% VS C5 QINGDAO
+            </span>
+<span class="block font-data-tabular text-body-sm text-on-surface-variant mt-1">C5 Base: $11.45/MT • Implied Diff: -$1.25/MT</span>
+</div>
+</div>
+<div>
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Route Risk Radar &amp; Chokepoint Diagnostics</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Combined: MODERATE</span>
+</div>
+<div class="grid grid-cols-3 gap-space-sm">
+<div class="bg-surface-container-low p-space-sm rounded-lg flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Weather</span>
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+</div>
+<div class="my-space-xs">
+<span class="font-data-tabular-bold text-headline-sm text-on-surface">16%</span>
+<div class="w-full bg-surface-container h-1.5 rounded-full overflow-hidden mt-1">
+<div class="bg-secondary h-full rounded-full" style="width: 16%"></div>
+</div>
+</div>
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">Cyclone Season (Bay of Bengal)</span>
+<span class="font-body-sm text-[11px] text-on-surface-variant leading-tight mt-0.5">Pre-monsoon depression active</span>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded-lg flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Geopolitical</span>
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+</div>
+<div class="my-space-xs">
+<span class="font-data-tabular-bold text-headline-sm text-on-surface">9%</span>
+<div class="w-full bg-surface-container h-1.5 rounded-full overflow-hidden mt-1">
+<div class="bg-secondary h-full rounded-full" style="width: 9%"></div>
+</div>
+</div>
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">Malacca / Sunda Strait Transit</span>
+<span class="font-body-sm text-[11px] text-on-surface-variant leading-tight mt-0.5">Traffic density / coastal patrol active</span>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded-lg flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Congestion</span>
+<span class="w-2 h-2 rounded-full bg-tertiary-fixed-dim"></span>
+</div>
+<div class="my-space-xs">
+<span class="font-data-tabular-bold text-headline-sm text-on-surface">46%</span>
+<div class="w-full bg-surface-container h-1.5 rounded-full overflow-hidden mt-1">
+<div class="bg-tertiary-fixed-dim h-full rounded-full" style="width: 46%"></div>
+</div>
+</div>
+<span class="font-label-sm text-label-sm font-semibold text-tertiary-container">Paradip Berth Waiting / Krishnapatnam Queue</span>
+<span class="font-body-sm text-[11px] text-on-surface-variant leading-tight mt-0.5">4 Capesize at outer anchorage</span>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-low p-space-md rounded-lg flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm font-semibold uppercase text-on-surface">Historical Spot vs AI Window (Past 90 Days)</span>
+<span class="font-data-tabular text-label-sm text-secondary font-bold">USD/Metric Ton</span>
+</div>
+<div class="h-20 w-full flex items-end gap-1.5 pt-2">
+<div class="flex-1 bg-surface-container hover:bg-secondary-container h-[52%] rounded-t transition-all relative group" title="90d: $9.20"></div>
+<div class="flex-1 bg-surface-container hover:bg-secondary-container h-[58%] rounded-t transition-all relative group" title="75d: $9.55"></div>
+<div class="flex-1 bg-surface-container hover:bg-secondary-container h-[55%] rounded-t transition-all relative group" title="60d: $9.40"></div>
+<div class="flex-1 bg-surface-container hover:bg-secondary-container h-[66%] rounded-t transition-all relative group" title="45d: $9.80"></div>
+<div class="flex-1 bg-surface-container hover:bg-secondary-container h-[72%] rounded-t transition-all relative group" title="30d: $10.05"></div>
+<div class="flex-1 bg-surface-container hover:bg-secondary-container h-[65%] rounded-t transition-all relative group" title="20d: $9.75"></div>
+<div class="flex-1 bg-surface-container hover:bg-secondary-container h-[78%] rounded-t transition-all relative group" title="10d: $10.10"></div>
+<div class="flex-1 bg-secondary h-[82%] rounded-t transition-all relative group" title="Spot: $10.20"></div>
+<div class="flex-1 bg-tertiary-fixed-dim h-[92%] rounded-t transition-all relative group" title="AI Forecast Max: $10.85"></div>
+<div class="flex-1 bg-tertiary-fixed h-[86%] rounded-t transition-all relative group" title="AI Expected: $10.45"></div>
+</div>
+<div class="flex justify-between font-label-sm text-label-sm text-on-surface-variant pt-1 border-none">
+<span>90 Days Ago</span>
+<span class="font-data-tabular font-semibold text-secondary">Today ($10.20)</span>
+<span class="font-data-tabular font-semibold text-tertiary-container">Forecast Range (Sep '25)</span>
+</div>
+</div>
+</div>
+<div class="bg-primary-container text-on-primary p-space-md rounded-xl shadow-md flex items-center gap-space-md">
+<div class="w-12 h-12 rounded bg-tertiary-fixed-dim text-on-tertiary-fixed flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[28px]">lightbulb</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-secondary-container uppercase tracking-wider font-semibold">AI Chartering Prescriptive Alpha</span>
+<p class="font-body-sm text-body-sm text-inverse-on-surface mt-0.5 leading-snug">
+            Capesize iron ore stems discharging at Paradip &amp; Vizag face Bay of Bengal swell congestion. Indian steel mill restocking is accelerating. Recommended action: <strong>Fix Laycan between Aug 18–24 to front-run FFA spike</strong>.
+          </p>
+</div>
+</div>
+</div>
+</div>
+<div class="fixed inset-0 z-50 bg-primary-container/60 backdrop-blur-[2px] hidden flex items-center justify-center p-space-md" id="ai-modal">
+<div class="bg-surface-container-lowest text-on-surface w-full max-w-xl p-space-xl rounded-xl shadow-2xl flex flex-col gap-space-lg transform transition-all scale-95 opacity-0 duration-200" id="modal-content">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container">
+<span class="material-symbols-outlined text-[20px]">psychology</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Neural Engine Run Complete</h3>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Simulated 10,000 Baltic voyage scenarios</span>
+</div>
+</div>
+<button class="p-1 rounded hover:bg-surface-container text-on-surface-variant hover:text-on-surface" id="close-modal" type="button">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<div class="bg-surface-container-low p-space-md rounded-lg flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase font-semibold">Primary Directive</span>
+<span class="font-data-tabular-bold text-label-sm bg-secondary-container text-on-secondary-container px-2 py-0.5 rounded">HIGH CONFIDENCE (93.8%)</span>
+</div>
+<div class="flex items-center gap-space-sm my-1">
+<span class="font-data-tabular-bold text-headline-lg text-secondary uppercase">BUY NOW</span>
+<span class="font-body-md text-body-md text-on-surface font-medium">— Fix Port Hedland → Paradip prior to Aug 22</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Calculated expected rate: <strong>$10.20/MT</strong>. Projected spot surge to <strong>$11.10/MT</strong> by Sep 02 due to Bay of Bengal swell congestion at Paradip &amp; Vizag outer anchorage.
+        </p>
+</div>
+<div class="grid grid-cols-2 gap-space-md">
+<div class="bg-surface-container-low p-space-sm rounded">
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Estimated Cost Basis</span>
+<span class="font-data-metric text-headline-md text-on-surface font-bold">$1,836,000 USD</span>
+<span class="font-label-sm text-label-sm text-secondary block mt-0.5">↓ $162,000 vs benchmark</span>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded">
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Optimal Charter Window</span>
+<span class="font-data-tabular-bold text-headline-md text-on-surface">Aug 18 - Aug 24</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant block mt-0.5">4 Capesize in ballast radius</span>
+</div>
+</div>
+<div class="flex items-center justify-end gap-space-sm pt-space-xs">
+<button class="px-space-lg py-2 rounded bg-surface-container hover:bg-surface-container-high font-label-md text-label-md text-on-surface" id="dismiss-modal-btn" type="button">Dismiss</button>
+<button class="px-space-xl py-2 rounded bg-primary text-on-primary hover:bg-primary-container font-label-md text-label-md flex items-center gap-space-xs font-semibold" type="button">
+<span>Export Detailed Dossier</span>
+<span class="material-symbols-outlined text-[16px]">file_download</span>
+</button>
+</div>
+</div>
+</div>
+<script>
+    (function() {
+      // Unit toggle behavior
+      const unitMt = document.getElementById('unit-mt');
+      const unitLt = document.getElementById('unit-lt');
+      const volInput = document.getElementById('volume-input');
+
+      unitMt.addEventListener('click', function() {
+        unitMt.className = 'px-2 py-0.5 font-label-sm text-label-sm rounded bg-surface-container-lowest text-on-surface font-bold shadow-sm';
+        unitLt.className = 'px-2 py-0.5 font-label-sm text-label-sm rounded text-on-surface-variant hover:text-on-surface';
+        volInput.value = '180,000';
+      });
+
+      unitLt.addEventListener('click', function() {
+        unitLt.className = 'px-2 py-0.5 font-label-sm text-label-sm rounded bg-surface-container-lowest text-on-surface font-bold shadow-sm';
+        unitMt.className = 'px-2 py-0.5 font-label-sm text-label-sm rounded text-on-surface-variant hover:text-on-surface';
+        volInput.value = '177,156';
+      });
+
+      // Vessel Selector cards
+      const vesselCards = document.querySelectorAll('.vessel-card');
+      vesselCards.forEach(card => {
+        card.addEventListener('click', function() {
+          vesselCards.forEach(c => {
+            c.className = 'vessel-card cursor-pointer bg-surface-container-low hover:bg-surface-container text-on-surface p-space-md rounded-lg flex flex-col justify-between h-28 transition-all transform hover:-translate-y-0.5';
+            const icon = c.querySelector('.material-symbols-outlined');
+            if (icon) icon.className = 'material-symbols-outlined text-[24px] text-on-surface-variant';
+            const dot = c.querySelector('.rounded-full');
+            if (dot) dot.remove();
+          });
+          card.className = 'vessel-card active cursor-pointer bg-primary-container text-on-primary p-space-md rounded-lg shadow-sm flex flex-col justify-between h-28 transition-all transform hover:-translate-y-0.5';
+          const icon = card.querySelector('.material-symbols-outlined');
+          if (icon) icon.className = 'material-symbols-outlined text-[24px] text-secondary-container';
+          
+          const topRow = card.children[0];
+          if (!topRow.querySelector('.rounded-full')) {
+            const dot = document.createElement('span');
+            dot.className = 'w-2 h-2 rounded-full bg-secondary-container';
+            topRow.appendChild(dot);
+          }
+        });
+      });
+
+      // Presets bar click behavior
+      const presetButtons = document.querySelectorAll('.lane-preset');
+      const originInput = document.getElementById('origin-input');
+      const destInput = document.getElementById('dest-input');
+      const previewDist = document.getElementById('preview-distance');
+      const previewDur = document.getElementById('preview-duration');
+      const previewSpot = document.getElementById('preview-spot');
+
+      presetButtons.forEach(btn => {
+        btn.addEventListener('click', function() {
+          presetButtons.forEach(b => {
+            b.className = 'lane-preset bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface px-space-md py-1 rounded font-data-tabular text-data-tabular transition-all flex items-center gap-space-xs';
+            const dot = b.querySelector('.rounded-full');
+            if (dot) dot.remove();
+          });
+          btn.className = 'lane-preset active bg-surface-container-lowest text-on-surface shadow-sm hover:bg-surface-container px-space-md py-1 rounded font-data-tabular text-data-tabular transition-all flex items-center gap-space-xs';
+          
+          const dot = document.createElement('span');
+          dot.className = 'w-1.5 h-1.5 rounded-full bg-secondary';
+          btn.prepend(dot);
+
+          originInput.value = btn.dataset.origin;
+          
+          // Set destination select if matching option exists or add it
+          let found = false;
+          for (let i = 0; i < destInput.options.length; i++) {
+            if (destInput.options[i].value === btn.dataset.dest) {
+              destInput.selectedIndex = i;
+              found = true;
+              break;
+            }
+          }
+          if (!found) {
+            const newOpt = new Option(btn.dataset.dest, btn.dataset.dest, true, true);
+            destInput.add(newOpt);
+          }
+
+          previewDist.textContent = btn.dataset.nm + ' NM';
+          previewDur.textContent = btn.dataset.days + ' Days';
+          previewSpot.textContent = btn.dataset.spot.split('/')[0];
+        });
+      });
+
+      // Swap Ports
+      const swapBtn = document.getElementById('swap-ports');
+      swapBtn.addEventListener('click', function() {
+        const temp = originInput.value;
+        originInput.value = destInput.value;
+        // set destInput value
+        destInput.value = temp;
+      });
+
+      // Modal Display
+      const forecastForm = document.getElementById('forecast-form');
+      const aiModal = document.getElementById('ai-modal');
+      const modalContent = document.getElementById('modal-content');
+      const closeModal = document.getElementById('close-modal');
+      const dismissBtn = document.getElementById('dismiss-modal-btn');
+      const generateBtn = document.getElementById('generate-btn');
+
+      forecastForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        const origText = generateBtn.innerHTML;
+        generateBtn.innerHTML = '<span class="material-symbols-outlined text-[24px] animate-spin">refresh</span><span>Synthesizing FFA & Fleet Vectors...</span>';
+        generateBtn.disabled = true;
+
+        setTimeout(() => {
+          generateBtn.innerHTML = origText;
+          generateBtn.disabled = false;
+          aiModal.classList.remove('hidden');
+          setTimeout(() => {
+            modalContent.classList.remove('scale-95', 'opacity-0');
+            modalContent.classList.add('scale-100', 'opacity-100');
+          }, 10);
+        }, 600);
+      });
+
+      function hideModal() {
+        modalContent.classList.remove('scale-100', 'opacity-100');
+        modalContent.classList.add('scale-95', 'opacity-0');
+        setTimeout(() => {
+          aiModal.classList.add('hidden');
+        }, 150);
+      }
+
+      closeModal.addEventListener('click', hideModal);
+      dismissBtn.addEventListener('click', hideModal);
+      aiModal.addEventListener('click', function(e) {
+        if (e.target === aiModal) hideModal();
+      });
+    })();
+  </script>
+</div></main></div></body></html>

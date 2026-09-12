@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-secondary":"#ffffff","primary-fixed":"#d3e4ff","on-tertiary":"#ffffff","on-surface-variant":"#44474d","on-primary-fixed":"#091c31","on-tertiary-container":"#b77800","on-error":"#ffffff","tertiary-fixed":"#ffddb4","on-primary-fixed-variant":"#37485f","on-tertiary-fixed":"#291800","primary-fixed-dim":"#b6c8e4","surface-dim":"#c5dcfd","secondary":"#1f6868","outline-variant":"#c4c6cd","on-tertiary-fixed-variant":"#633f00","on-primary-container":"#7586a0","tertiary-fixed-dim":"#ffb955","tertiary-container":"#2c1900","tertiary":"#060200","on-secondary-fixed":"#002020","outline":"#74777d","secondary-container":"#aaefee","on-background":"#021c36","surface-container":"#e5eeff","on-secondary-container":"#276e6e","surface":"#f8f9ff","background":"#f8f9ff","on-surface":"#021c36","surface-tint":"#4e6078","on-secondary-fixed-variant":"#004f50","on-error-container":"#93000a","secondary-fixed":"#aaefee","surface-container-high":"#dce9ff","surface-container-highest":"#d2e4ff","secondary-fixed-dim":"#8fd2d2","primary":"#00030b","surface-container-low":"#eff4ff","error-container":"#ffdad6","surface-bright":"#f8f9ff","inverse-on-surface":"#eaf1ff","error":"#ba1a1a","primary-container":"#0b1e33","on-primary":"#ffffff","surface-container-lowest":"#ffffff","inverse-primary":"#b6c8e4","inverse-surface":"#1a324c","surface-variant":"#d2e4ff"},borderRadius:{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},spacing:{"margin-mobile":"1rem","space-2xl":"3rem","space-sm":"0.5rem","space-lg":"1.5rem","space-2xs":"0.125rem","gutter-desktop":"1rem","margin-desktop":"1.5rem","gutter-mobile":"0.5rem","space-base":"1rem","space-xs":"0.25rem","space-md":"0.75rem","space-xl":"2rem"},fontFamily:{"body-sm":["Inter"],"display":["Inter"],"data-tabular-bold":["JetBrains Mono"],"headline-lg-mobile":["Inter"],"headline-md":["Inter"],"headline-sm":["Inter"],"body-md":["Inter"],"data-metric":["JetBrains Mono"],"label-sm":["Inter"],"headline-lg":["Inter"],"body-lg":["Inter"],"label-md":["Inter"],"data-tabular":["JetBrains Mono"]},fontSize:{"body-sm":["12px",{"lineHeight":"16px","letterSpacing":"0.005em","fontWeight":"400"}],"display":["36px",{"lineHeight":"44px","letterSpacing":"-0.025em","fontWeight":"700"}],"data-tabular-bold":["12px",{"lineHeight":"16px","letterSpacing":"-0.01em","fontWeight":"700"}],"headline-lg-mobile":["22px",{"lineHeight":"28px","letterSpacing":"-0.015em","fontWeight":"700"}],"headline-md":["20px",{"lineHeight":"26px","letterSpacing":"-0.015em","fontWeight":"600"}],"headline-sm":["16px",{"lineHeight":"22px","letterSpacing":"-0.01em","fontWeight":"600"}],"body-md":["13px",{"lineHeight":"18px","letterSpacing":"0em","fontWeight":"400"}],"data-metric":["22px",{"lineHeight":"26px","letterSpacing":"-0.03em","fontWeight":"600"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.03em","fontWeight":"600"}],"headline-lg":["28px",{"lineHeight":"34px","letterSpacing":"-0.02em","fontWeight":"700"}],"body-lg":["15px",{"lineHeight":"22px","letterSpacing":"-0.005em","fontWeight":"400"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"600"}],"data-tabular":["12px",{"lineHeight":"16px","letterSpacing":"-0.01em","fontWeight":"500"}]}}}}</script></head><body class="bg-surface font-body-md text-body-md text-on-surface"><header class="fixed top-0 w-full z-50 bg-surface-container-lowest/90 backdrop-blur-md shadow-[0_1px_8px_rgba(11,30,51,0.04)]"><div class="h-14 w-full px-margin-desktop flex items-center justify-between"><div class="flex items-center gap-space-md"><img alt="Brand logo. - Primary color: #0b1e33
+- Font: inter
+- Mode: light
+- Roundness: rounded-sm
+" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UsVHowXyyCiV5p0yVaF0lf614Llv2xW7fWrIyKokC_KYpSf8N8OPpMTzhYLgT86RATxu37Tfwxkb51_Ci9HcqXg6wcpPQKXTCaYYZbGq-VP5-rwu-d2QFTdUWSnujZBeKbZiXU4kW4P42SYyNl5tRmbBzZ-rg8s_TD2cGwWKA89zU42hk1-uvDk-XjvbbxqRRG2va_9mD9FS_e_kmeRZS191X7ymSGEkUtwQISK119BDXa3ZHCVzQ4OQ"/><div class="flex items-center gap-space-xs"><span class="font-headline-sm text-headline-sm text-primary-container tracking-tight">FreightIQ</span><span class="px-space-xs py-space-2xs bg-secondary-container text-on-secondary-container font-label-sm text-label-sm rounded uppercase">Enterprise Portal</span></div></div><nav class="flex items-center gap-space-lg" data-active-classes="text-primary-container font-bold underline decoration-secondary"><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="sign-in" href="#">Sign In</a><a aria-current="page" class="transition-colors text-primary-container font-bold underline decoration-secondary" data-path="organization-onboarding" href="#">Register Desk</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="sso-verification" href="#">SSO Gateway</a></nav><div class="flex items-center gap-space-md"><a class="flex items-center gap-space-xs font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="help-center" href="#"><span class="material-symbols-outlined text-[18px]">help</span>Desk Support</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-14 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<div class="w-full px-margin-desktop py-space-lg max-w-[1720px] mx-auto">
+<!-- Top Step Bar Tracker -->
+<div class="w-full mb-space-lg flex flex-col md:flex-row md:items-center justify-between gap-space-sm bg-surface-container-lowest p-space-base rounded-xl shadow-sm">
+<div class="flex items-center gap-space-md">
+<div class="w-9 h-9 rounded-lg bg-primary-container text-on-primary flex items-center justify-center font-data-tabular-bold text-data-tabular-bold">
+          03
+        </div>
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold">Onboarding Flow</span>
+<span class="font-label-sm text-label-sm text-outline">•</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Step 3 of 4</span>
+</div>
+<p class="font-headline-sm text-headline-sm text-on-surface">Trade Profile &amp; Corridors Configuration</p>
+</div>
+</div>
+<!-- Stepper Pills -->
+<div class="flex items-center gap-space-sm">
+<div class="flex items-center gap-space-xs px-space-md py-space-xs bg-surface-container-low rounded-lg">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+<span class="font-label-sm text-label-sm text-on-surface line-through decoration-secondary">Org Matrix</span>
+</div>
+<div class="w-4 h-0.5 bg-outline-variant/50"></div>
+<div class="flex items-center gap-space-xs px-space-md py-space-xs bg-surface-container-low rounded-lg">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+<span class="font-label-sm text-label-sm text-on-surface line-through decoration-secondary">ERP &amp; Desk Auth</span>
+</div>
+<div class="w-4 h-0.5 bg-outline-variant/50"></div>
+<div class="flex items-center gap-space-xs px-space-md py-space-xs bg-tertiary-fixed text-on-tertiary-fixed rounded-lg shadow-sm">
+<span class="w-2 h-2 rounded-full bg-on-tertiary-container animate-pulse"></span>
+<span class="font-label-sm text-label-sm font-bold">Trade Corridors</span>
+</div>
+<div class="w-4 h-0.5 bg-outline-variant/50"></div>
+<div class="flex items-center gap-space-xs px-space-md py-space-xs bg-surface rounded-lg opacity-60">
+<span class="material-symbols-outlined text-outline text-[18px]">radio_button_unchecked</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Hedging Rules</span>
+</div>
+</div>
+</div>
+<!-- Main Workspace Split Container -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-space-lg items-start">
+<!-- LEFT MARITIME BRAND / CORRIDOR TELEMETRY PANEL (5 Columns) -->
+<div class="xl:col-span-5 flex flex-col gap-space-base">
+<!-- Live Map & Neural Route Synthesizer Card -->
+<div class="bg-primary-container text-on-primary rounded-xl overflow-hidden shadow-xl p-space-base relative">
+<!-- Ambient Glow Backdrop -->
+<div class="absolute -top-12 -left-12 w-64 h-64 bg-secondary/30 rounded-full blur-3xl pointer-events-none"></div>
+<div class="absolute -bottom-16 -right-16 w-64 h-64 bg-tertiary-fixed/10 rounded-full blur-3xl pointer-events-none"></div>
+<!-- Top Panel Bar -->
+<div class="relative z-10 flex items-center justify-between pb-space-sm mb-space-sm border-b border-outline-variant/10">
+<div class="flex items-center gap-space-xs">
+<span class="inline-block w-2.5 h-2.5 rounded-full bg-secondary-container"></span>
+<span class="font-data-tabular text-data-tabular text-primary-fixed uppercase tracking-wider">AI NAVSIM™ PROJECTION ENGINE</span>
+</div>
+<span class="font-label-sm text-label-sm px-space-xs py-space-2xs bg-surface-container-highest/20 text-primary-fixed rounded font-mono">
+              LAT: 12.37N | LON: 80.03E
+            </span>
+</div>
+<!-- Synthetic Nautical Route Canvas -->
+<div class="relative z-10 w-full h-72 rounded-lg bg-primary/80 overflow-hidden p-space-base flex flex-col justify-between">
+<div class="flex justify-between items-start">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary-fixed-dim">Active Trajectory</span>
+<p class="font-headline-sm text-headline-sm text-on-primary mt-space-2xs" id="previewLaneTitle">Kalimantan → Krishnapatnam</p>
+<div class="flex items-center gap-space-xs mt-space-xs">
+<span class="font-data-tabular text-data-tabular px-space-xs py-space-2xs rounded bg-surface-container-highest/20 text-secondary-container font-mono">PANAMAX STEAMING</span>
+<span class="font-data-tabular text-data-tabular px-space-xs py-space-2xs rounded bg-surface-container-highest/20 text-on-tertiary-container font-mono">LADEN 12.4 KTS</span>
+</div>
+</div>
+<!-- Live Telemetry Pill -->
+<div class="bg-surface-container-highest/10 backdrop-blur-md px-space-sm py-space-xs rounded-lg text-right">
+<span class="font-label-sm text-label-sm text-primary-fixed-dim block">Distance to Discharge</span>
+<span class="font-data-metric text-data-metric text-on-primary" id="previewDistance">3,280 <span class="font-label-sm text-label-sm">NM</span></span>
+</div>
+</div>
+<!-- Stylized Nautical SVG Vector Representation -->
+<div class="relative my-auto py-space-sm">
+<svg class="w-full h-24 overflow-visible" fill="none" viewbox="0 0 400 90" xmlns="http://www.w3.org/2000/svg">
+<!-- Bathymetry Contour Lines -->
+<path d="M5 80 C 70 70, 120 85, 200 65 C 280 45, 340 75, 395 60" opacity="0.35" stroke="#1f6868" stroke-dasharray="3 3" stroke-width="1"></path>
+<path d="M5 50 C 90 40, 160 60, 240 30 C 310 10, 360 40, 395 20" opacity="0.25" stroke="#1f6868" stroke-dasharray="2 4" stroke-width="1"></path>
+<!-- Main Voyage Trajectory Curve -->
+<path class="animate-pulse" d="M 30 65 C 120 15, 260 85, 370 25" id="nauticalPath" stroke="#aaefee" stroke-dasharray="5 5" stroke-linecap="round" stroke-width="2.5"></path>
+<!-- Waypoints -->
+<!-- Origin Point: Kalimantan / Port Hedland -->
+<circle cx="30" cy="65" fill="#f8f9ff" r="5" stroke="#aaefee" stroke-width="3"></circle>
+<circle cx="30" cy="65" fill="none" opacity="0.4" r="11" stroke="#aaefee" stroke-width="1"></circle>
+<text fill="#b6c8e4" font-family="JetBrains Mono" font-size="9" font-weight="600" x="24" y="85">ORIGIN [ID/AU]</text>
+<!-- Malacca Strait / Intermediate Checkpoint -->
+<circle cx="200" cy="46" fill="#ffb955" r="3.5"></circle>
+<text fill="#ffddb4" font-family="JetBrains Mono" font-size="8" x="175" y="38">STRAIT CORRIDOR</text>
+<!-- Discharge Point: Krishnapatnam / Paradip -->
+<circle cx="370" cy="25" fill="#f5a623" r="6" stroke="#ffffff" stroke-width="2"></circle>
+<circle cx="370" cy="25" fill="none" opacity="0.6" r="14" stroke="#f5a623" stroke-dasharray="2 2" stroke-width="1"></circle>
+<text fill="#ffffff" font-family="JetBrains Mono" font-size="9" font-weight="600" x="330" y="45">DISCHARGE [IN]</text>
+</svg>
+</div>
+<!-- Bottom Metric Telemetry Strip -->
+<div class="grid grid-cols-3 gap-space-xs pt-space-xs border-t border-outline-variant/10 text-center">
+<div class="bg-surface-container-highest/10 p-space-xs rounded">
+<span class="font-label-sm text-label-sm text-primary-fixed-dim block">Transit Time</span>
+<span class="font-data-tabular-bold text-data-tabular-bold text-primary-fixed" id="previewDays">11.0 Days</span>
+</div>
+<div class="bg-surface-container-highest/10 p-space-xs rounded">
+<span class="font-label-sm text-label-sm text-primary-fixed-dim block">VLSFO Burn Rate</span>
+<span class="font-data-tabular-bold text-data-tabular-bold text-secondary-fixed">24.5 MT/day</span>
+</div>
+<div class="bg-surface-container-highest/10 p-space-xs rounded">
+<span class="font-label-sm text-label-sm text-primary-fixed-dim block">Weather Drift</span>
+<span class="font-data-tabular-bold text-data-tabular-bold text-tertiary-fixed">+0.4 Kts Calm</span>
+</div>
+</div>
+</div>
+<!-- AI Model Ingestion Feed -->
+<div class="relative z-10 mt-space-base bg-surface-container-highest/10 rounded-lg p-space-base">
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary-container text-[20px]">psychology</span>
+<span class="font-headline-sm text-headline-sm text-on-primary">Desk Intelligence Vector</span>
+</div>
+<span class="px-space-xs py-space-2xs bg-surface-container text-on-surface font-label-sm text-label-sm rounded font-bold">READY</span>
+</div>
+<p class="font-body-sm text-body-sm text-primary-fixed-dim leading-relaxed">
+              Based on your selection of bulk iron and coal lanes, FreightIQ is initializing Baltic Exchange real-time fixture feeds, AIS satellite vessel clustering in Singapore-Sunda Straits, and monsoon weather modeling for East Coast India.
+            </p>
+<div class="mt-space-md grid grid-cols-2 gap-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary-container text-[18px]">satellite_alt</span>
+<span class="font-label-sm text-label-sm text-primary-fixed">14-Day AIS Forward Radar</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary-container text-[18px]">currency_exchange</span>
+<span class="font-label-sm text-label-sm text-primary-fixed">Platts &amp; BDI Cross-Hedging</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary-container text-[18px]">anchor</span>
+<span class="font-label-sm text-label-sm text-primary-fixed">Port Waiting Congestion</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary-container text-[18px]">oil_barrel</span>
+<span class="font-label-sm text-label-sm text-primary-fixed">Rotterdam/Fujairah Bunkers</span>
+</div>
+</div>
+</div>
+<!-- Institutional Trust Badge -->
+<div class="relative z-10 mt-space-base flex items-center justify-between px-space-sm py-space-xs bg-primary/40 rounded-lg">
+<span class="font-label-sm text-label-sm text-primary-fixed-dim">Maritime Data Source</span>
+<span class="font-data-tabular text-data-tabular text-on-secondary-container">BALTIC EXCHANGE VERIFIED SEED</span>
+</div>
+</div>
+<!-- Secondary Informational Prompt -->
+<div class="bg-surface-container-lowest p-space-base rounded-xl shadow-sm flex items-start gap-space-md">
+<div class="w-10 h-10 rounded-lg bg-surface-container-low flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-secondary text-[24px]">troubleshoot</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Dynamic Fixture Benchmarking</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-2xs leading-relaxed">
+              Every route selected generates an automatic 30-day forward predictive price distribution curve against historical C3, C5, and P2A Baltic fixtures.
+            </p>
+</div>
+</div>
+</div>
+<!-- RIGHT FORM WORKFLOW CONTAINER (7 Columns) -->
+<div class="xl:col-span-7 flex flex-col gap-space-lg bg-surface-container-lowest p-space-xl rounded-xl shadow-sm">
+<!-- Header -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="px-space-xs py-space-2xs bg-secondary-container text-on-secondary-container font-label-sm text-label-sm rounded uppercase font-bold">
+              Core Input Matrix
+            </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Step 3 Execution</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-primary-container tracking-tight">
+            Configure your primary trade corridors &amp; benchmarks
+          </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+            Seed the AI procurement engine with your core commodities, active shipping lanes, and baseline indexes to generate high-probability fixture recommendations.
+          </p>
+</div>
+<!-- SECTION 1: COMMODITIES MULTI-SELECT -->
+<div class="flex flex-col gap-space-sm pt-space-xs">
+<div class="flex items-center justify-between">
+<label class="font-headline-sm text-headline-sm text-on-surface flex items-center gap-space-xs">
+<span class="w-5 h-5 rounded-full bg-surface-container-high text-on-surface flex items-center justify-center font-data-tabular text-data-tabular">1</span>
+              Which commodities do you procure or trade?
+            </label>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Select all applicable</span>
+</div>
+<!-- Commodity Pills Grid -->
+<div class="flex flex-wrap gap-space-xs" id="commodityContainer">
+<!-- Iron Ore Selected -->
+<button class="commodity-chip group px-space-md py-space-xs rounded-lg flex items-center gap-space-xs bg-primary-container text-on-primary shadow-sm transition-all" type="button">
+<span class="material-symbols-outlined text-[16px] text-tertiary-fixed">landscape</span>
+<span class="font-label-md text-label-md">Iron Ore (62% Fe)</span>
+<span class="material-symbols-outlined text-[14px] text-primary-fixed-dim">check</span>
+</button>
+<!-- Thermal Coal Selected -->
+<button class="commodity-chip group px-space-md py-space-xs rounded-lg flex items-center gap-space-xs bg-primary-container text-on-primary shadow-sm transition-all" type="button">
+<span class="material-symbols-outlined text-[16px] text-tertiary-fixed">fireplace</span>
+<span class="font-label-md text-label-md">Thermal Coal</span>
+<span class="material-symbols-outlined text-[14px] text-primary-fixed-dim">check</span>
+</button>
+<!-- Coking Coal Selected -->
+<button class="commodity-chip group px-space-md py-space-xs rounded-lg flex items-center gap-space-xs bg-primary-container text-on-primary shadow-sm transition-all" type="button">
+<span class="material-symbols-outlined text-[16px] text-tertiary-fixed">factory</span>
+<span class="font-label-md text-label-md">Coking Coal (Metallurgical)</span>
+<span class="material-symbols-outlined text-[14px] text-primary-fixed-dim">check</span>
+</button>
+<!-- Unselected Bauxite -->
+<button class="commodity-chip group px-space-md py-space-xs rounded-lg flex items-center gap-space-xs bg-surface-container-low hover:bg-surface-container text-on-surface transition-all" type="button">
+<span class="material-symbols-outlined text-[16px] text-outline">terrain</span>
+<span class="font-label-md text-label-md">Bauxite</span>
+</button>
+<!-- Unselected Fertilizer -->
+<button class="commodity-chip group px-space-md py-space-xs rounded-lg flex items-center gap-space-xs bg-surface-container-low hover:bg-surface-container text-on-surface transition-all" type="button">
+<span class="material-symbols-outlined text-[16px] text-outline">grain</span>
+<span class="font-label-md text-label-md">Fertilizer (Urea/DAP)</span>
+</button>
+<!-- Unselected Agri / Grain -->
+<button class="commodity-chip group px-space-md py-space-xs rounded-lg flex items-center gap-space-xs bg-surface-container-low hover:bg-surface-container text-on-surface transition-all" type="button">
+<span class="material-symbols-outlined text-[16px] text-outline">agriculture</span>
+<span class="font-label-md text-label-md">Agri / Grain</span>
+</button>
+<!-- Custom Add Button -->
+<button class="px-space-md py-space-xs rounded-lg flex items-center gap-space-2xs bg-surface text-secondary hover:bg-secondary-container/20 font-label-md text-label-md transition-all" id="btnAddCommodity" type="button">
+<span class="material-symbols-outlined text-[16px]">add</span>
+<span>Add Commodity</span>
+</button>
+</div>
+</div>
+<!-- SECTION 2: MONITORED TRADE CORRIDORS -->
+<div class="flex flex-col gap-space-sm pt-space-xs">
+<div class="flex items-center justify-between">
+<div>
+<label class="font-headline-sm text-headline-sm text-on-surface flex items-center gap-space-xs">
+<span class="w-5 h-5 rounded-full bg-surface-container-high text-on-surface flex items-center justify-center font-data-tabular text-data-tabular">2</span>
+                Monitored Trade Corridors (Origin → Destination Ports)
+              </label>
+<p class="font-body-sm text-body-sm text-on-surface-variant ml-7">
+                High-frequency shipping lanes monitored for chartering fixtures and bunker spreads.
+              </p>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-bold">3 Active Lanes</span>
+</div>
+<!-- Corridor Cards List -->
+<div class="flex flex-col gap-space-xs" id="corridorList">
+<!-- Route Card 1 -->
+<div class="corridor-card group flex items-center justify-between p-space-md bg-surface-container-low rounded-lg transition-all hover:bg-surface-container cursor-pointer" data-days="11.0 Days" data-dist="3,280 NM" data-route="Kalimantan (ID) → Krishnapatnam (IN)">
+<div class="flex items-center gap-space-md">
+<div class="w-8 h-8 rounded bg-surface-container-lowest flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[20px]">directions_boat</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="font-data-tabular-bold text-data-tabular-bold text-on-surface">Kalimantan (ID)</span>
+<span class="material-symbols-outlined text-outline text-[16px]">trending_flat</span>
+<span class="font-data-tabular-bold text-data-tabular-bold text-on-surface">Krishnapatnam (IN)</span>
+<span class="font-label-sm text-label-sm px-space-xs py-space-2xs bg-secondary-container/60 text-on-secondary-container rounded font-mono">Panamax Coal</span>
+</div>
+<div class="flex items-center gap-space-md text-on-surface-variant font-label-sm text-label-sm mt-space-2xs">
+<span>Dist: 3,280 NM</span>
+<span>•</span>
+<span>Draft Limit: 14.5m</span>
+<span>•</span>
+<span>Avg Transit: 11.2 d</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="btn-preview-route px-space-xs py-space-2xs bg-surface text-on-surface-variant hover:text-on-surface rounded font-label-sm text-label-sm" type="button">
+                  Focus
+                </button>
+<button class="btn-remove-route w-7 h-7 rounded hover:bg-error-container hover:text-on-error-container text-outline flex items-center justify-center transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+</div>
+<!-- Route Card 2 -->
+<div class="corridor-card group flex items-center justify-between p-space-md bg-surface-container-low rounded-lg transition-all hover:bg-surface-container cursor-pointer" data-days="13.8 Days" data-dist="4,120 NM" data-route="Port Hedland (AU) → Paradip (IN)">
+<div class="flex items-center gap-space-md">
+<div class="w-8 h-8 rounded bg-surface-container-lowest flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[20px]">directions_boat</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="font-data-tabular-bold text-data-tabular-bold text-on-surface">Port Hedland (AU)</span>
+<span class="material-symbols-outlined text-outline text-[16px]">trending_flat</span>
+<span class="font-data-tabular-bold text-data-tabular-bold text-on-surface">Paradip (IN)</span>
+<span class="font-label-sm text-label-sm px-space-xs py-space-2xs bg-surface-container-high text-on-surface rounded font-mono">Capesize Iron Ore</span>
+</div>
+<div class="flex items-center gap-space-md text-on-surface-variant font-label-sm text-label-sm mt-space-2xs">
+<span>Dist: 4,120 NM</span>
+<span>•</span>
+<span>Draft Limit: 17.8m</span>
+<span>•</span>
+<span>Avg Transit: 13.8 d</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="btn-preview-route px-space-xs py-space-2xs bg-surface text-on-surface-variant hover:text-on-surface rounded font-label-sm text-label-sm" type="button">
+                  Focus
+                </button>
+<button class="btn-remove-route w-7 h-7 rounded hover:bg-error-container hover:text-on-error-container text-outline flex items-center justify-center transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+</div>
+<!-- Route Card 3 -->
+<div class="corridor-card group flex items-center justify-between p-space-md bg-surface-container-low rounded-lg transition-all hover:bg-surface-container cursor-pointer" data-days="12.5 Days" data-dist="3,890 NM" data-route="Dampier (AU) → Visakhapatnam (IN)">
+<div class="flex items-center gap-space-md">
+<div class="w-8 h-8 rounded bg-surface-container-lowest flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[20px]">directions_boat</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="font-data-tabular-bold text-data-tabular-bold text-on-surface">Dampier (AU)</span>
+<span class="material-symbols-outlined text-outline text-[16px]">trending_flat</span>
+<span class="font-data-tabular-bold text-data-tabular-bold text-on-surface">Visakhapatnam (IN)</span>
+<span class="font-label-sm text-label-sm px-space-xs py-space-2xs bg-tertiary-fixed text-on-tertiary-fixed rounded font-mono">Capesize Met Coal</span>
+</div>
+<div class="flex items-center gap-space-md text-on-surface-variant font-label-sm text-label-sm mt-space-2xs">
+<span>Dist: 3,890 NM</span>
+<span>•</span>
+<span>Draft Limit: 16.5m</span>
+<span>•</span>
+<span>Avg Transit: 12.5 d</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="btn-preview-route px-space-xs py-space-2xs bg-surface text-on-surface-variant hover:text-on-surface rounded font-label-sm text-label-sm" type="button">
+                  Focus
+                </button>
+<button class="btn-remove-route w-7 h-7 rounded hover:bg-error-container hover:text-on-error-container text-outline flex items-center justify-center transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Add Custom Route Trigger Row -->
+<div class="mt-space-2xs flex flex-col md:flex-row items-center gap-space-xs p-space-sm bg-surface rounded-lg">
+<div class="relative w-full md:w-1/2">
+<span class="material-symbols-outlined absolute left-2.5 top-2.5 text-outline text-[18px]">trip_origin</span>
+<select class="w-full pl-9 pr-3 py-1.5 bg-surface-container-lowest rounded font-body-sm text-body-sm text-on-surface focus:outline-none shadow-sm">
+<option value="">Select Origin Port (e.g., Richards Bay, Newcastle)</option>
+<option value="Richards Bay (ZA)">Richards Bay (ZA) - South Africa</option>
+<option value="Newcastle (AU)">Newcastle (AU) - East Australia</option>
+<option value="Tubarao (BR)">Tubarao (BR) - Brazil</option>
+<option value="Port Cartier (CA)">Port Cartier (CA) - Canada</option>
+</select>
+</div>
+<div class="relative w-full md:w-1/2">
+<span class="material-symbols-outlined absolute left-2.5 top-2.5 text-outline text-[18px]">location_on</span>
+<select class="w-full pl-9 pr-3 py-1.5 bg-surface-container-lowest rounded font-body-sm text-body-sm text-on-surface focus:outline-none shadow-sm">
+<option value="">Select Discharge Port (e.g., Ennore, Haldia)</option>
+<option value="Ennore (IN)">Ennore / Kamarajar (IN)</option>
+<option value="Haldia (IN)">Haldia Complex (IN)</option>
+<option value="Mundra (IN)">Mundra Port (IN)</option>
+<option value="Qingdao (CN)">Qingdao Iron Terminal (CN)</option>
+</select>
+</div>
+<button class="w-full md:w-auto px-space-md py-1.5 bg-secondary text-on-secondary rounded font-label-md text-label-md flex items-center justify-center gap-space-2xs shrink-0 shadow-sm hover:opacity-90" type="button">
+<span class="material-symbols-outlined text-[16px]">add_location_alt</span>
+              Add Route
+            </button>
+</div>
+</div>
+<!-- SECTION 3: PREFERRED VESSEL CLASSES -->
+<div class="flex flex-col gap-space-sm pt-space-xs">
+<label class="font-headline-sm text-headline-sm text-on-surface flex items-center gap-space-xs">
+<span class="w-5 h-5 rounded-full bg-surface-container-high text-on-surface flex items-center justify-center font-data-tabular text-data-tabular">3</span>
+            Preferred Vessel Classes
+          </label>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-sm" id="vesselContainer">
+<!-- Capesize (Selected) -->
+<div class="vessel-card p-space-base rounded-lg bg-surface-container cursor-pointer transition-all shadow-sm">
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-data-tabular-bold text-data-tabular-bold text-on-surface">Capesize</span>
+<span class="material-symbols-outlined text-secondary text-[20px]">check_circle</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-mono block">120k – 200k DWT</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs">Bulk ore, deep water berths, gears not fitted.</p>
+</div>
+<!-- Panamax (Selected) -->
+<div class="vessel-card p-space-base rounded-lg bg-surface-container cursor-pointer transition-all shadow-sm">
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-data-tabular-bold text-data-tabular-bold text-on-surface">Panamax / Kamsar</span>
+<span class="material-symbols-outlined text-secondary text-[20px]">check_circle</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-mono block">65k – 85k DWT</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs">Coal parcels, grain stems, draft restricted bays.</p>
+</div>
+<!-- Supramax (Unselected) -->
+<div class="vessel-card p-space-base rounded-lg bg-surface-container-lowest hover:bg-surface-container-low cursor-pointer transition-all opacity-80">
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-data-tabular-bold text-data-tabular-bold text-on-surface">Supramax / Ultra</span>
+<span class="material-symbols-outlined text-outline text-[20px]">radio_button_unchecked</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline font-mono block">50k – 60k DWT</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs">Geared 4x30t cranes, minor bulk flexibility.</p>
+</div>
+<!-- Handysize (Unselected) -->
+<div class="vessel-card p-space-base rounded-lg bg-surface-container-lowest hover:bg-surface-container-low cursor-pointer transition-all opacity-80">
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-data-tabular-bold text-data-tabular-bold text-on-surface">Handysize</span>
+<span class="material-symbols-outlined text-outline text-[20px]">radio_button_unchecked</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline font-mono block">28k – 40k DWT</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs">Shallow port access, specialized fertilizers.</p>
+</div>
+</div>
+</div>
+<!-- SECTION 4: BENCHMARK INDEX & SETTLEMENT GRID -->
+<div class="flex flex-col gap-space-sm pt-space-xs">
+<label class="font-headline-sm text-headline-sm text-on-surface flex items-center gap-space-xs">
+<span class="w-5 h-5 rounded-full bg-surface-container-high text-on-surface flex items-center justify-center font-data-tabular text-data-tabular">4</span>
+            Pricing Indexation &amp; Settlement Rules
+          </label>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-base">
+<!-- Default Benchmark Index -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-sm text-label-sm uppercase font-bold text-on-surface-variant">Default Benchmark Index</label>
+<div class="relative">
+<select class="w-full px-space-md py-space-sm bg-surface rounded-lg font-data-tabular text-data-tabular text-on-surface focus:outline-none shadow-sm appearance-none">
+<option selected="" value="C5_PROXY">Baltic C5 Proxy (W. Australia → India E. Coast)</option>
+<option value="BDI">Baltic Dry Index (BDI Global Comprehensive)</option>
+<option value="BCI">Baltic Capesize Index (BCI 4TC)</option>
+<option value="BPI">Baltic Panamax Index (BPI P2A_82)</option>
+<option value="PLATTS">S&amp;P Global Platts IODEX 62% CFR China</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-3 text-outline pointer-events-none text-[20px]">expand_more</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Used to anchor FFA hedging suggestions and voyage laytime calc.</span>
+</div>
+<!-- Base Settlement Currency -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-sm text-label-sm uppercase font-bold text-on-surface-variant">Base Settlement Currency</label>
+<div class="relative">
+<select class="w-full px-space-md py-space-sm bg-surface rounded-lg font-data-tabular text-data-tabular text-on-surface focus:outline-none shadow-sm appearance-none">
+<option selected="" value="USD">USD ($) — Global Maritime Benchmark Default</option>
+<option value="EUR">EUR (€) — Continental Port Clearances</option>
+<option value="INR">INR (₹) — Domestic Stevedoring &amp; Customs</option>
+<option value="SGD">SGD (S$) — Singapore Bunkering Hub</option>
+<option value="AUD">AUD (A$) — Western Australian Loadings</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-3 text-outline pointer-events-none text-[20px]">expand_more</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Multi-currency fixtures convert daily via institutional FX spot feed.</span>
+</div>
+</div>
+</div>
+<!-- ACTION BAR -->
+<div class="flex items-center justify-between pt-space-lg mt-space-sm bg-surface-container-low/50 -mx-space-xl -mb-space-xl p-space-xl rounded-b-xl">
+<button class="px-space-lg py-space-sm bg-surface hover:bg-surface-container text-on-surface rounded font-label-md text-label-md flex items-center gap-space-xs shadow-sm transition-all" type="button">
+<span class="material-symbols-outlined text-[18px]">arrow_back</span>
+<span>Back to Step 2</span>
+</button>
+<div class="flex items-center gap-space-base">
+<span class="hidden sm:inline-block font-label-sm text-label-sm text-on-surface-variant">
+              Profile auto-saves as draft
+            </span>
+<button class="px-space-xl py-space-sm bg-tertiary-fixed text-on-tertiary-fixed hover:bg-tertiary-fixed-dim rounded font-headline-sm text-headline-sm flex items-center gap-space-sm shadow-md transition-all" id="btnSaveContinue" type="button">
+<span>Save &amp; Continue to Preferences</span>
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Supplementary Real-time Market Ticker Ribbon -->
+<div class="w-full mt-space-lg bg-surface-container-lowest p-space-base rounded-xl shadow-sm flex flex-col md:flex-row items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<span class="flex items-center gap-space-2xs font-data-tabular-bold text-data-tabular-bold text-secondary">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+          FIXTURE BENCHMARKS LIVE
+        </span>
+<div class="h-4 w-px bg-outline-variant/40 hidden md:block"></div>
+<div class="flex items-center gap-space-lg overflow-x-auto text-nowrap">
+<div class="flex items-center gap-space-xs font-data-tabular text-data-tabular">
+<span class="text-on-surface-variant">C5 (W.AU/CN):</span>
+<span class="text-on-surface font-bold">$10.42/MT</span>
+<span class="text-secondary font-bold">+2.4%</span>
+</div>
+<div class="flex items-center gap-space-xs font-data-tabular text-data-tabular">
+<span class="text-on-surface-variant">P2A (Cont/FEast):</span>
+<span class="text-on-surface font-bold">$21,850/day</span>
+<span class="text-error font-bold">-0.8%</span>
+</div>
+<div class="flex items-center gap-space-xs font-data-tabular text-data-tabular">
+<span class="text-on-surface-variant">VLSFO Singapore:</span>
+<span class="text-on-surface font-bold">$618.50/MT</span>
+<span class="text-secondary font-bold">+1.1%</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-space-xs font-label-sm text-label-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-secondary">verified_user</span>
+<span>Charterparty Model: Baltic 99 / GENCON Standard</span>
+</div>
+</div>
+</div>
+<script>
+    (function() {
+      // Interactive Corridor Selection Preview Update
+      const corridorCards = document.querySelectorAll('.corridor-card');
+      const previewLaneTitle = document.getElementById('previewLaneTitle');
+      const previewDistance = document.getElementById('previewDistance');
+      const previewDays = document.getElementById('previewDays');
+      const nauticalPath = document.getElementById('nauticalPath');
+
+      corridorCards.forEach(card => {
+        card.addEventListener('click', function() {
+          const route = this.getAttribute('data-route');
+          const dist = this.getAttribute('data-dist');
+          const days = this.getAttribute('data-days');
+
+          corridorCards.forEach(c => c.classList.remove('bg-surface-container'));
+          this.classList.add('bg-surface-container');
+
+          if(previewLaneTitle) previewLaneTitle.textContent = route;
+          if(previewDistance) previewDistance.innerHTML = `${dist.replace(' NM', '')} <span class="font-label-sm text-label-sm">NM</span>`;
+          if(previewDays) previewDays.textContent = days;
+
+          // Quick micro-pulse on vector route
+          if(nauticalPath) {
+            nauticalPath.setAttribute('stroke', '#ffb955');
+            setTimeout(() => {
+              nauticalPath.setAttribute('stroke', '#aaefee');
+            }, 500);
+          }
+        });
+      });
+
+      // Interactive Commodity Chips Toggle
+      const commodityChips = document.querySelectorAll('.commodity-chip');
+      commodityChips.forEach(chip => {
+        chip.addEventListener('click', function() {
+          const isSelected = this.classList.contains('bg-primary-container');
+          if (isSelected) {
+            this.classList.remove('bg-primary-container', 'text-on-primary');
+            this.classList.add('bg-surface-container-low', 'text-on-surface');
+            const checkIcon = this.querySelector('.material-symbols-outlined:last-child');
+            if(checkIcon && checkIcon.textContent === 'check') checkIcon.remove();
+          } else {
+            this.classList.remove('bg-surface-container-low', 'text-on-surface');
+            this.classList.add('bg-primary-container', 'text-on-primary');
+            const check = document.createElement('span');
+            check.className = 'material-symbols-outlined text-[14px] text-primary-fixed-dim';
+            check.textContent = 'check';
+            this.appendChild(check);
+          }
+        });
+      });
+
+      // Vessel card toggles
+      const vesselCards = document.querySelectorAll('.vessel-card');
+      vesselCards.forEach(vCard => {
+        vCard.addEventListener('click', function() {
+          const isSelected = this.classList.contains('bg-surface-container');
+          const icon = this.querySelector('.material-symbols-outlined');
+          if (isSelected) {
+            this.classList.remove('bg-surface-container');
+            this.classList.add('bg-surface-container-lowest', 'opacity-80');
+            if(icon) {
+              icon.textContent = 'radio_button_unchecked';
+              icon.classList.remove('text-secondary');
+              icon.classList.add('text-outline');
+            }
+          } else {
+            this.classList.add('bg-surface-container');
+            this.classList.remove('bg-surface-container-lowest', 'opacity-80');
+            if(icon) {
+              icon.textContent = 'check_circle';
+              icon.classList.add('text-secondary');
+              icon.classList.remove('text-outline');
+            }
+          }
+        });
+      });
+
+      // Route Removal micro interaction
+      const removeButtons = document.querySelectorAll('.btn-remove-route');
+      removeButtons.forEach(btn => {
+        btn.addEventListener('click', function(e) {
+          e.stopPropagation();
+          const card = this.closest('.corridor-card');
+          if(card) {
+            card.style.opacity = '0';
+            card.style.transform = 'translateX(20px)';
+            setTimeout(() => card.remove(), 250);
+          }
+        });
+      });
+
+      // Add Commodity trigger notification
+      const btnAddCommodity = document.getElementById('btnAddCommodity');
+      if (btnAddCommodity) {
+        btnAddCommodity.addEventListener('click', function() {
+          const name = prompt("Enter commodity name (e.g., Petcoke, Nickel Ore):", "Petcoke (High Sulfur)");
+          if (name) {
+            const newChip = document.createElement('button');
+            newChip.type = 'button';
+            newChip.className = 'commodity-chip group px-space-md py-space-xs rounded-lg flex items-center gap-space-xs bg-primary-container text-on-primary shadow-sm transition-all';
+            newChip.innerHTML = `
+              <span class="material-symbols-outlined text-[16px] text-tertiary-fixed">category</span>
+              <span class="font-label-md text-label-md">${name}</span>
+              <span class="material-symbols-outlined text-[14px] text-primary-fixed-dim">check</span>
+            `;
+            btnAddCommodity.parentElement.insertBefore(newChip, btnAddCommodity);
+          }
+        });
+      }
+    })();
+  </script>
+</div></main><footer class="w-full bg-surface-container-lowest py-space-md border-t border-outline-variant/30"><div class="w-full px-margin-desktop flex flex-col sm:flex-row items-center justify-between gap-space-sm text-on-surface-variant"><div class="flex items-center gap-space-sm"><span class="font-label-sm text-label-sm">© 2025 FreightIQ Maritime Intelligence Ltd. Institutional Freight Terminal.</span><span class="font-data-tabular text-data-tabular text-secondary px-space-xs py-space-2xs bg-surface-container rounded">TERMINAL v4.12-PROD</span></div><div class="flex items-center gap-space-base"><a class="font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface" href="#">Baltic Exchange Integration</a><a class="font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface" href="#">Compliance &amp; Sanctions</a><a class="font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface" href="#">Chartering API</a></div></div></footer></body></html>
